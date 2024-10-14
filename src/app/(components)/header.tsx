@@ -2,20 +2,19 @@ import React from 'react'
 import { ThemeSwitch } from './themeswitch'
 import Image from 'next/image'
 import Link from 'next/link'
-import { yeseva, josefin } from '../font'
+import { josefin } from '../font'
 
 const Header = () => {
   return (
-    <header className={`flex justify-center items-center w-full max-w-[1280px] mx-auto text-black dark:text-white ${josefin.className} py-4`}>
-      <nav className='w-full flex items-center justify-between'>
-      <Image 
-      src="/images/3dlogo.jpg"
-      alt="logo"
-      width={100}
-      height={100}
-      quality={100}
-
-      />
+    <header className={`flex justify-center items-center w-full mx-auto text-black dark:text-lavender ${josefin.className} py-4 fixed backdrop-blur-xl left-0 top-0`}>
+      <nav className='w-full flex items-center justify-between max-w-[1280px]'>
+        <Image 
+        src="/images/galaxyfi.svg"
+        alt="logo"
+        width={40}
+        height={40}
+        quality={100}
+        />
 
       <div className={`flex items-center gap-6 text-light tracking-normal`}>
         {
@@ -32,7 +31,7 @@ const Header = () => {
       </div>
       <div className="flex items-center space-x-2">
       <Link 
-      className="py-2 px-4 rounded-md bg-[#07070A] dark:bg-white text-white dark:text-[#07070A] text-sm"
+      className="py-2 px-4 rounded-md bg-[#07070A] dark:bg-lavender text-lavender dark:text-customBlack text-sm"
       href="/waitlist">
         Join Waitlist
       </Link>

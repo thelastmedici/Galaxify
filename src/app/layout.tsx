@@ -29,11 +29,10 @@ export default function RootLayout({
   // const { theme } = useTheme()
   return (
     <html lang="en" suppressHydrationWarning>
-
+      <ParticleHeader />
       <body
-        className={`antialiased w-full max-w-[1440px] mx-auto border min-h-screen`}
+        className={`antialiased w-full max-w-[1440px] mx-auto border min-h-screen relative z-[0]`}
       >
-        <ParticleHeader  />
         <ThemeProvider
         attribute="class"
         defaultTheme="system"

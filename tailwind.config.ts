@@ -10,6 +10,12 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+				customBlack : "#060606",
+				darkViolet : "#7E3FFF",
+				blueBerry : "#5E7FFF",
+				picton : "#45B4FF",
+				chineseWhite : "#D6EADF",
+				lavender : "#DFE3FE",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

@@ -1,8 +1,8 @@
-"use client"
-import React from 'react'
+"use client";
+import React from 'react';
 import { useTheme } from 'next-themes';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadFull, } from 'tsparticles';
+import { loadFull } from 'tsparticles';
 import { MoveDirection, OutMode, type Container, type ISourceOptions } from "@tsparticles/engine";
 
 export default function ParticleHeader() {
@@ -10,15 +10,16 @@ export default function ParticleHeader() {
   const { theme, systemTheme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [bgColor, setBgColor] = React.useState("");
-  const [ particleColor, setParticleColor ] = React.useState("");
+  const [particleColor, setParticleColor] = React.useState("");
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  console.log(currentTheme, theme)
+  console.log(currentTheme, theme);
+
   React.useEffect(() => {
     setMounted(true);
     if (mounted) {
       setBgColor(currentTheme === "light" ? "#f9f9f9" : "#222222");
-      setParticleColor(currentTheme === "light" ? '#000' : '#fff')
+      setParticleColor(currentTheme === "light" ? "#000" : "#fff");
     }
   }, [currentTheme, mounted]);
 
@@ -38,54 +39,70 @@ export default function ParticleHeader() {
     () => ({
       background: {
         color: currentTheme,
-    },
-    fullScreen : {
-      zIndex : -1
-    },
-    particles: {
-      shape : {
-        type : 'circle',
       },
-      color : {
-        value : '#008000'
+      fullScreen: {
+        zIndex: -1, // Ensures particles stay behind other elements
+        enable: true,
       },
-      number: {
-        value: 100,
-
+      style: {
+        zIndex: "-100", // Additional safety to ensure particles stay behind
+        position: "fixed",
       },
-      move: {
-          direction: MoveDirection.none,
+      particles: {
+        shape: {
+          type: 'circle',
+        },
+        color: {
+          value: particleColor, // Color based on the theme
+        },
+        number: {
+          value: 100,
+        },
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "repulse", // Makes particles react to mouse hover
+            },
+          },
+          detectOn: "canvas", // Detect interaction on canvas
+        },
+        retina_detect: true,
+        move: {
+          direction: MoveDirection.topLeft,
           enable: true,
           outModes: {
-              default: OutMode.out,
+            default: OutMode.out,
           },
           random: true,
-          speed: 0.1,
+          speed: 2,
           straight: false,
-      },
-      opacity: {
+        },
+        opacity: {
           animation: {
-              enable: true,
-              speed: 1,
-              sync: false,
+            enable: true,
+            speed: 1,
+            sync: false,
           },
           value: { min: 0, max: 1 },
-      },
-      size: {
+        },
+        size: {
           value: { min: 1, max: 3 },
+        },
       },
-    },
-  }),
-  [currentTheme, particleColor],
+    }),
+    [currentTheme, particleColor],
   );
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+      <>
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+      </>
     );
   }
 
