@@ -9,7 +9,7 @@ const InputBox = ({ className } : { className : string }) => {
   const [ email, setEmail ] = React.useState("")
   return (
     <form 
-    className={`${className} w-full flex items-center justify-center ${josefin.className} space-x-3 relative`}>
+    className={`${className} w-full flex items-center justify-center ${josefin.className} gap-3 relative`}>
       <div className='absolute -right-24 -top-6 transition-transform duration-200 rotate-[-25deg]'>
         <Arrow />
       </div>

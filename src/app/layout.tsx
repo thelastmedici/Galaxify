@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./(components)/header";
 import { ThemeProvider } from "./(providers)/themeprovider";
 import ParticleHeader from "./(components)/particleheader";
+import Footer from "./(components)/footer";
 // import { useTheme } from "next-themes";
 
 // const geistSans = localFont({
@@ -31,7 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <ParticleHeader />
       <body
-        className={`antialiased w-full max-w-[1440px] mx-auto border min-h-screen relative z-[0]`}
+        className={`antialiased w-full max-w-[1440px] mx-auto border min-h-screen relative z-[0] px-3`}
       >
         <ThemeProvider
         attribute="class"
@@ -41,6 +42,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
