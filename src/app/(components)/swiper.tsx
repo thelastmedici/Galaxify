@@ -139,7 +139,7 @@ export default function Swipe() {
   console.log(sliderIndex);
 
   return (
-    <div className="relative grid grid-cols-1 min-[991px]:grid-cols-2 p-6 sm:py-20 sm:px-12 gap-10">
+    <div className="relative grid grid-cols-1 min-[991px]:grid-cols-2 p-6 sm:py-20 sm:px-12 gap-10 overflow-hidden">
       <div className="">
         <h1 className={`${yeseva.className} text-left text-4xl`}>
           Our Product Offers
@@ -174,7 +174,7 @@ export default function Swipe() {
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-end">
+      <div className="flex items-center justify-end w-full">
         <Swiper
           loop={true}
           autoplay={{

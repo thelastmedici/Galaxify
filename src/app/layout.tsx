@@ -34,7 +34,7 @@ export default function RootLayout({
       <ReduxProvider>
         <ParticleHeader />
         <body
-          className={`antialiased w-full max-w-[1440px] mx-auto  min-h-screen relative z-[0]`}
+          className={`antialiased w-full max-w-[1440px] mx-auto  min-h-screen relative z-[0] overflow-x-hidden`}
           >
             <ThemeProvider
             attribute="class"
