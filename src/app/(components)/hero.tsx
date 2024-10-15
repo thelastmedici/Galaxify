@@ -4,10 +4,10 @@ import InputBox from './input'
 
 const Hero = () => {
   return (
-    <section className="w-full max-w-3xl mx-auto">
+    <section className="w-full max-w-3xl mx-auto px-3 sm:px-0">
       <div className=''>
         <h1 
-        className={`${yeseva.className} text-center text-[144px] tracking-wider !text-darkViolet leading-tight`}>
+        className={`${yeseva.className} text-center text-[80px] sm:text-[100px] md:text-[144px] tracking-wider !text-darkViolet leading-tight`}>
           Galaxy
           <span 
           className='uppercase'>
@@ -24,6 +24,8 @@ const Hero = () => {
         </h1>
       </div>
       <InputBox 
+      arrow={true}
+      key={1}
       className='max-w-lg mx-auto mt-10'
       />
     </section>

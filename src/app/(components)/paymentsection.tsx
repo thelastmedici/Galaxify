@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import { josefin, yeseva } from '../font'
 import InputBox from './input'
@@ -15,6 +14,8 @@ const PaymentSection = () => {
             Start your journey with Ewalletly as we save the digital space with Financial freedom
           </p>
           <InputBox
+          arrow={false}
+          key={2}
           className='w-full md:max-w-md !justify-left'
           />
         </div>
@@ -23,7 +24,7 @@ const PaymentSection = () => {
         alt="transaction"
         className='w-[500px] h-[500px] object-cover object-center'
         // quality={100}
-        />
+        />  
       </div>
     </section>
   )

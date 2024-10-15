@@ -6,7 +6,7 @@ import { josefin } from '../font'
 
 const Header = () => {
   return (
-    <header className={`flex justify-center items-center w-full mx-auto text-black dark:text-lavender ${josefin.className} py-4 fixed backdrop-blur-xl left-0 top-0 z-[10000]`}>
+    <header className={`flex justify-center items-center w-full mx-auto text-black dark:text-lavender ${josefin.className} py-4 fixed backdrop-blur-xl left-0 top-0 z-[10000] px-3`}>
       <nav className='w-full flex items-center justify-between max-w-[1280px]'>
         <Image 
         src="/images/galaxyfi.svg"
@@ -16,7 +16,7 @@ const Header = () => {
         quality={100}
         />
 
-      <div className={`flex items-center gap-6 text-light tracking-normal`}>
+      <div className={`sm:flex items-center gap-6 text-light tracking-normal hidden`}>
         {
           [
             ['about us', 'about'],

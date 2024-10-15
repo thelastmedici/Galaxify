@@ -4,7 +4,7 @@ import { josefin } from '@/app/font'
 
 const ImgGrid = () => {
   return (
-    <section className={`grid grid-cols-2 md:grid-cols-3 my-10 gap-6 w-full max-w-6xl mx-auto ${ josefin.className }`}>
+    <section className={`grid grid-cols-2 md:grid-cols-3 my-10 gap-6 w-full max-w-6xl mx-auto ${ josefin.className} px-3`}>
       <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden'>
         <div className='row-span-3 rounded-lg overflow-hidden'>
           <Image
@@ -53,7 +53,7 @@ const ImgGrid = () => {
             <img src="/images/borderless.jpg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
           </div>
         </div>
-        <div className='rounded-lg overflow-hidden relative '>
+        <div className='rounded-lg overflow-hidden relative h-full'>
           <div className='absolute bottom-0 left-0 w-full py-4 px-3 max-w-[250px] flex flex-col gap-2 !text-customBlack'>
             <h1 className='!text-customBlack font-bold text-xl'>
               Redefining e-commerce
@@ -65,9 +65,9 @@ const ImgGrid = () => {
           <img
             src="/images/cart.jpg"
             alt="reliable"
-            className='w-full h-[300px] sm:h-full object-cover object-center'
-            width={200}
-            height={700}
+            className='w-full h-[300px] sm:h-full object-cover object-left'
+            // width={200}
+            // height={200}
             // quality={100}
             // priority={false}
             />

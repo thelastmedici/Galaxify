@@ -11,7 +11,7 @@ export default function Home() {
         <Hero />
       </div>
       <div className="w-full max-w-5xl mx-auto">
-        <h1 className={`text-customBlack text-center dark:text-lavender !text-6xl font-light ${josefin.className}`}>Supercharge your financing with swift, reliable and borderless banking</h1>
+        <h1 className={`text-customBlack text-center dark:text-lavender text-4xl md:!text-6xl font-light ${josefin.className}`}>Supercharge your financing with swift, reliable and borderless banking</h1>
       </div>
       <ImgGrid />
       <Swipe />
