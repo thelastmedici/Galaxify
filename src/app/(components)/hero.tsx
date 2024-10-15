@@ -10,8 +10,8 @@ const Hero = () => {
         className={`${yeseva.className} text-center min-[400px]:text-[80px] text-[60px] sm:text-[100px] md:text-[144px] tracking-wider !text-darkViolet leading-tight`}>
           Galaxy
           <span 
-          className='uppercase'>
-            FI
+          className='capitalize'>
+            Fi
           </span>
         </h1>
         <p 

@@ -50,7 +50,7 @@ const Footer = () => {
         {/* right */}
         <div className='flex flex-col gap-5 max-w-[250px] w-full'>
           <p className={`${josefin.className} text-lg font-medium text-white`}>
-            Start your journey with Galaxyfi as we save the digital space with Financial freedom
+            Start your journey with GalaxyFi as we save the digital space with Financial freedom
           </p>
 
           <div className="flex items-center space-x-3">

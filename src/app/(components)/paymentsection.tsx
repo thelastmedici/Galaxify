@@ -11,7 +11,7 @@ const PaymentSection = () => {
             Supercharge your payments
           </h1>
           <p className={`${josefin.className} text-base !text-white`}>
-            Start your journey with Ewalletly as we save the digital space with Financial freedom
+            Start your journey with GalaxyFi as we save the digital space with Financial freedom
           </p>
           <InputBox
           arrow={false}
