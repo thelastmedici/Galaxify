@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";;
 
 const Footer = () => {
   return (
-    <footer className="bg-darkViolet w-full py-12 flex flex-row px-6 lg:px-3">
+    <footer className="bg-darkViolet w-full py-12 flex flex-row px-6 lg:px-3 !text-white">
       <div className='w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-10'>
         {/* left */}
         <div className='flex flex-col justify-between space-y-10'>
@@ -25,7 +25,7 @@ const Footer = () => {
         {/* middle */}
         <div className='grid grid-cols-1 lg:grid-cols-3 flex-1 gap-10 lg:gap-10'>
           <div className='flex flex-col gap-5'>
-            <h1 className={`${yeseva.className} text-xl`}>Company</h1>
+            <h1 className={`!text-white ${yeseva.className} text-xl`}>Company</h1>
             <ul className={`${josefin.className} flex flex-col gap-3 text-base font-medium`}>
               <li>About us</li>
               <li>Contact us</li>
@@ -33,13 +33,13 @@ const Footer = () => {
             </ul>
           </div>
           <div className='flex flex-col gap-5'>
-            <h1 className={`${yeseva.className} text-xl`}>Products</h1>
+            <h1 className={`!text-white ${yeseva.className} text-xl`}>Products</h1>
             <ul className={`${josefin.className} flex flex-col gap-3 text-base font-medium`}>
               
             </ul>
           </div>
           <div className='flex flex-col gap-5'>
-            <h1 className={`${yeseva.className} text-xl`}>Support</h1>
+            <h1 className={`!text-white ${yeseva.className} text-xl`}>Support</h1>
             <ul className={`${josefin.className} flex flex-col gap-3 text-base font-medium`}>
               <li>Help Center</li>
               <li>FAQ</li>
@@ -49,7 +49,7 @@ const Footer = () => {
 
         {/* right */}
         <div className='flex flex-col gap-5 max-w-[250px] w-full'>
-          <p className={`${josefin.className} text-lg font-medium`}>
+          <p className={`${josefin.className} text-lg font-medium text-white`}>
             Start your journey with Galaxyfi as we save the digital space with Financial freedom
           </p>
 

@@ -36,7 +36,7 @@ const ImgGrid = () => {
               <h1 className='text-lavender font-bold text-xl'>
                   Swift and Secure Payment
               </h1>
-              <p className='text-base'>Your transactions are protected and safe with us</p>
+              <p className='text-base !text-white'>Your transactions are protected and safe with us</p>
             </div>
             <img 
             src="/images/fastsecure.jpg" 
@@ -48,7 +48,7 @@ const ImgGrid = () => {
               <h1 className='text-lavender font-bold text-xl'>  
                 Borderless Transactions
               </h1>
-              <p className='text-base'>Experience the freedom of payments across the Globe</p>
+              <p className='text-base !text-white'>Experience the freedom of payments across the Globe</p>
             </div>
             <img src="/images/borderless.jpg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
           </div>

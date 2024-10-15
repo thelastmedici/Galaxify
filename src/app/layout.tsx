@@ -4,6 +4,7 @@ import Header from "./(components)/header";
 import { ThemeProvider } from "./(providers)/themeprovider";
 import ParticleHeader from "./(components)/particleheader";
 import Footer from "./(components)/footer";
+import { ReduxProvider } from "./(providers)/reduxprovider";
 // import { useTheme } from "next-themes";
 
 // const geistSans = localFont({
@@ -30,21 +31,23 @@ export default function RootLayout({
   // const { theme } = useTheme()
   return (
     <html lang="en" suppressHydrationWarning>
-      <ParticleHeader />
-      <body
-        className={`antialiased w-full max-w-[1440px] mx-auto  min-h-screen relative z-[0]`}
-      >
-        <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
+      <ReduxProvider>
+        <ParticleHeader />
+        <body
+          className={`antialiased w-full max-w-[1440px] mx-auto  min-h-screen relative z-[0]`}
+          >
+            <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+            >
+              <Header />
+              {children}
+              <Footer />
+            </ThemeProvider>
+        </body>  
+      </ReduxProvider>
     </html>
   );
 }

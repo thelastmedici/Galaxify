@@ -4,12 +4,18 @@ import { useTheme } from 'next-themes';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from 'tsparticles';
 import { MoveDirection, OutMode, type Container, type ISourceOptions } from "@tsparticles/engine";
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
+
 
 export default function ParticleHeader() {
+  const theme1 = useSelector((state:RootState) => state.ui.theme)
+  console.log(theme1);
   const [init, setInit] = React.useState(false);
-  const { theme, systemTheme, setTheme } = useTheme();
+  const { theme, systemTheme} = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [bgColor, setBgColor] = React.useState("");
+  console.log(bgColor);
   const [particleColor, setParticleColor] = React.useState("");
   const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -19,9 +25,9 @@ export default function ParticleHeader() {
     setMounted(true);
     if (mounted) {
       setBgColor(currentTheme === "light" ? "#f9f9f9" : "#222222");
-      setParticleColor(currentTheme === "light" ? "#000" : "#fff");
+      setParticleColor(theme1 === "light" ? "#5E7FFF" : "#fff");
     }
-  }, [currentTheme, mounted]);
+  }, [currentTheme, mounted, theme1]);
 
   React.useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -56,7 +62,7 @@ export default function ParticleHeader() {
           value: particleColor, // Color based on the theme
         },
         number: {
-          value: 100,
+          value: 300,
         },
         interactivity: {
           events: {
@@ -75,7 +81,7 @@ export default function ParticleHeader() {
             default: OutMode.out,
           },
           random: true,
-          speed: 2,
+          speed: 1.5,
           straight: false,
         },
         opacity: {
@@ -87,7 +93,7 @@ export default function ParticleHeader() {
           value: { min: 0, max: 1 },
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 1 },
         },
       },
     }),

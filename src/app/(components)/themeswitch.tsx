@@ -3,7 +3,7 @@
 import * as React from "react"
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
-
+import { useDispatch } from "react-redux"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -11,10 +11,16 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { changeState } from "../store/uiSlice"
 
 export function ThemeSwitch() {
+  const dispatch = useDispatch()
   const { theme, setTheme } = useTheme()
-  console.log(theme);
+
+
+  React.useEffect(() => {
+    dispatch(changeState(theme))
+  }, [theme, dispatch])
 
   return (
     <DropdownMenu>
@@ -25,7 +31,7 @@ export function ThemeSwitch() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="z-[1000000]">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>

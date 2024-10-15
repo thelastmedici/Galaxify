@@ -24,7 +24,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
       placeholder='Your Email Address'
       />
-      <button className='bg-lavender text-customBlack py-3 px-4 whitespace-nowrap rounded-lg w-full sm:w-fit'>
+      <button className={`${ arrow ? 'bg-darkViolet text-lavender' : 'bg-lavender text-customBlack' } py-3 px-4 whitespace-nowrap rounded-lg w-full sm:w-fit`}>
         Join Waitlist!
       </button>
     </form>
