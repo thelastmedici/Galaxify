@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <ParticleHeader />
       <body
-        className={`antialiased w-full max-w-[1440px] mx-auto border min-h-screen relative z-[0] px-3`}
+        className={`antialiased w-full max-w-[1440px] mx-auto  min-h-screen relative z-[0]`}
       >
         <ThemeProvider
         attribute="class"

@@ -8,10 +8,10 @@ const Hero = () => {
       <div className=''>
         <h1 
         className={`${yeseva.className} text-center text-[144px] tracking-wider !text-darkViolet leading-tight`}>
-          Galaxi
+          Galaxy
           <span 
           className='uppercase'>
-            FY
+            FI
           </span>
         </h1>
         <p 
