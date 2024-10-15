@@ -189,17 +189,7 @@ export default function Swipe() {
         >
           <SwiperSlide>
             <Image
-            src={`/images/transaction.png`}
-            width={300}
-            height={300}
-            alt="transaction"
-            quality={100}
-            className='w-full h-full '
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-            src={`/images/paymentsecured.png`}
+            src={`/images/Transactions.png`}
             width={300}
             height={300}
             alt="transaction"
@@ -220,6 +210,16 @@ export default function Swipe() {
           <SwiperSlide>
             <Image
             src={`/images/phones.png`}
+            width={300}
+            height={300}
+            alt="transaction"
+            quality={100}
+            className='w-full h-full '
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+            src={`/images/paymentsecured.png`}
             width={300}
             height={300}
             alt="transaction"
