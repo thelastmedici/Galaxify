@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="w-full min-h-screen !text-lavender">
       <section className="w-full h-[40vh] bg-[url('/images/noise.png')] mt-[60.08px] rounded-b-3xl flex flex-col items-center justify-center">
-        <h1 className={`${ dmsans.className} text-40 md:!text-[70px] font-bold`}>
+        <h1 className={`${ dmsans.className} text-40 md:!text-[70px] font-bold text-darkViolet`}>
           Contact us
         </h1>
         <p className={`${ sofia.className } text-lg`}>

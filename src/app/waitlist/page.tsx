@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <section className="w-full min-h-screen">
       <section className="w-full h-[40vh] bg-[url('/images/noise.png')] mt-[60.08px] rounded-b-3xl flex flex-col items-center justify-center text-center px-3">
-        <h1 className={`${ dmsans.className} !text-[40px] md:!text-[70px] font-bold`}>
+        <h1 className={`${ dmsans.className} !text-[40px] md:!text-[70px] font-bold text-darkViolet`}>
           Join our Waitlist
         </h1>
         <p className={`${ sofia.className } text-lg text-center`}>
