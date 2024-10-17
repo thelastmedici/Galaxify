@@ -17,7 +17,7 @@ const Hero = () => {
         <p 
         className={`text-center text-4xl mt-4 ${josefin.className}`}
         >
-          Your one in all app
+          Your all in one app
         </p>
         <h1 className={`${yeseva.className} text-center text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
           Join the Waitlist
