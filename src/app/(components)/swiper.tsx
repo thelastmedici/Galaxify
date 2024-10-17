@@ -295,7 +295,7 @@ export default function Swipe() {
               className={`flex flex-col gap-5 rounded-xl p-3 transition-all duration-300 
                 ${sliderIndex === index ? 'bg-gray-500 bg-opacity-25' : 'bg-transparent'}`}
             >
-              <div className={`flex space-x-3 flex-row items-center p-2 cursor-pointer`}>
+              <div className={`flex space-x-3 flex-row items-center p-2 cursor-pointer text-lavender`}>
                 {content.icon}
                 <h1 className="!font-bold text-lg">{content.title}</h1>
               </div>

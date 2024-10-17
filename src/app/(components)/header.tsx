@@ -1,12 +1,11 @@
 import React from 'react'
-import { ThemeSwitch } from './themeswitch'
 import Image from 'next/image'
 import Link from 'next/link'
 import { dmsans } from '../font'
 
 const Header = () => {
   return (
-    <header className={`flex justify-center items-center w-full mx-auto text-black dark:text-lavender ${dmsans.className} py-4 fixed backdrop-blur-xl left-0 top-0 z-[100] px-3`}>
+    <header className={`flex justify-center items-center w-full mx-auto text-lavender ${dmsans.className} py-4 fixed backdrop-blur-xl left-0 top-0 z-[100] px-3`}>
       <nav className='w-full flex items-center justify-between max-w-[1280px]'>
         <Link href="/">
           <Image 
@@ -37,7 +36,7 @@ const Header = () => {
         href="/waitlist">
           Join Waitlist
         </Link>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
       </div>
       </nav>
     </header>

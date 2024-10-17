@@ -1,5 +1,5 @@
 import React from 'react'
-import { josefin, yeseva } from '../font'
+import { dmsans, sofia } from '../font'
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiPhone } from "react-icons/ci";
@@ -8,19 +8,19 @@ import Link from 'next/link';
 
 const page = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen !text-lavender">
       <section className="w-full h-[40vh] bg-[url('/images/noise.png')] mt-[60.08px] rounded-b-3xl flex flex-col items-center justify-center">
-        <h1 className={`${ yeseva.className} text-40 md:!text-[70px]`}>
+        <h1 className={`${ dmsans.className} text-40 md:!text-[70px] font-bold`}>
           Contact us
         </h1>
-        <p className={`${ josefin.className } text-lg`}>
+        <p className={`${ sofia.className } text-lg`}>
           We can&apos;t wait to connect with you
         </p>
       </section>
 
       <section className='p-10 max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-y-10'>
         <div className=''>
-          <h1 className={`${ yeseva.className} !text-5xl`}>
+          <h1 className={`${ dmsans.className} !text-5xl font-bold`}>
             Connect with us
           </h1>
         </div>
@@ -28,29 +28,29 @@ const page = () => {
         <div className='w-full grid grid-cols-2 gap-4'>
           <div className='flex flex-row gap-4'>
             <div className="py-2">
-              <CiPhone />
+              <CiPhone size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${josefin.className} font-bold text-lg`}>Contact</h2>
-              <Link className="text-sm" href="#">+234 999 999 999 </Link>
-              <Link className="text-sm" href="#">+234 999 999 999 </Link>
+              <h2 className={`${sofia.className} font-bold text-lg`}>Contact</h2>
+              <Link className="text-xs" href="#">+234 999 999 999 </Link>
+              <Link className="text-xs" href="#">+234 999 999 999 </Link>
             </div>
           </div>
           <div className='flex flex-row gap-3'>
             <div className="py-2">
-              <MdOutlineEmail />
+              <MdOutlineEmail size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${josefin.className} font-bold text-lg`}>Email</h2>
+              <h2 className={`${sofia.className} font-bold text-lg`}>Email</h2>
               <Link href="#" className="text-sm">mail@gmail.com</Link>
             </div>
           </div>
           <div className='flex flex-row gap-3'>
             <div className="py-2">
-              <FaLinkedinIn />
+              <FaLinkedinIn size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${josefin.className} font-bold text-lg`}>LinkedIn</h2>
+              <h2 className={`${sofia.className} font-bold text-lg`}>LinkedIn</h2>
               <Link className="text-sm" href="#">
                 @username
               </Link>
@@ -58,10 +58,10 @@ const page = () => {
           </div>
           <div className='flex flex-row gap-3'>
             <div className="py-2">
-              <FaInstagram />
+              <FaInstagram size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${josefin.className} font-bold text-lg`}>Instagram</h2>
+              <h2 className={`${sofia.className} font-bold text-lg`}>Instagram</h2>
               <Link className="text-sm" href="#">
                 @username
               </Link>
@@ -69,10 +69,10 @@ const page = () => {
           </div>
           <div className='flex flex-row gap-3'>
             <div className="py-2">
-              <FaXTwitter />
+              <FaXTwitter size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${josefin.className} font-bold text-lg`}>X</h2>
+              <h2 className={`${sofia.className} font-bold text-lg`}>X</h2>
               <Link className="text-sm" href="#">
                 @username
               </Link>

@@ -1,7 +1,9 @@
 import React from 'react'
 import { dmsans, sofia } from '../font'
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";;
+import { FaXTwitter } from "react-icons/fa6";import Link from 'next/link';
+import Image from 'next/image';
+;
 
 
 const Footer = () => {
@@ -11,14 +13,27 @@ const Footer = () => {
         {/* left */}
         <div className='flex flex-col justify-between space-y-10'>
           <div className='flex space-x-2 items-center'>
-            <img src="/images/galaxyfi.svg" alt="" className='inline-flex w-7 '/>
-            <span className='font-medium ml-2'>Galaxyfi</span>
+            <Image
+            src={'/images/galaxy.svg'}
+            width={100}
+            height={80}
+            quality={100}
+            alt='logo'
+            />
           </div>
           <div className='w-full flex gap-x-6 flex-row'>
-            <FaFacebookF size={20} />
-            <FaLinkedinIn size={20} />
-            <FaXTwitter size={20} />
-            <FaInstagram size={20} />
+            <Link href="#">
+              <FaFacebookF size={20} />
+            </Link>
+            <Link href="">
+              <FaLinkedinIn size={20} />
+            </Link>
+            <Link href="">
+              <FaXTwitter size={20} />
+            </Link>
+            <Link href="">
+              <FaInstagram size={20} />
+            </Link>
           </div>
         </div>
 
@@ -28,7 +43,7 @@ const Footer = () => {
             <h1 className={`!text-white ${sofia.className} text-xl`}>Company</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
               <li>About us</li>
-              <li>Contact us</li>
+              <Link href="/contact">Contact us</Link>
               <li>Products</li>
             </ul>
           </div>

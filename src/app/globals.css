@@ -59,10 +59,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-lavender dark:bg-customBlack;
+    @apply bg-customBlack;
   }
   p, h1, h2 {
-    @apply text-customBlack dark:text-lavender
+    @apply text-lavender
   }
 }
 .swiper {
