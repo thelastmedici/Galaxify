@@ -1,5 +1,5 @@
 import React from 'react'
-import { dmsans, yeseva } from '../font'
+import { dmsans, sofia } from '../font'
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";;
 
@@ -25,7 +25,7 @@ const Footer = () => {
         {/* middle */}
         <div className='grid grid-cols-1 lg:grid-cols-3 flex-1 gap-10 lg:gap-10'>
           <div className='flex flex-col gap-5'>
-            <h1 className={`!text-white ${yeseva.className} text-xl`}>Company</h1>
+            <h1 className={`!text-white ${sofia.className} text-xl`}>Company</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
               <li>About us</li>
               <li>Contact us</li>
@@ -33,13 +33,13 @@ const Footer = () => {
             </ul>
           </div>
           <div className='flex flex-col gap-5'>
-            <h1 className={`!text-white ${yeseva.className} text-xl`}>Products</h1>
+            <h1 className={`!text-white ${sofia.className} text-xl`}>Products</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
               
             </ul>
           </div>
           <div className='flex flex-col gap-5'>
-            <h1 className={`!text-white ${yeseva.className} text-xl`}>Support</h1>
+            <h1 className={`!text-white ${sofia.className} text-xl`}>Support</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
               <li>Help Center</li>
               <li>FAQ</li>

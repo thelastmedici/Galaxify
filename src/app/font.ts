@@ -1,4 +1,6 @@
 import { Yeseva_One, Josefin_Sans, DM_Sans } from "next/font/google";
+import localFont from "next/font/local";
+
 
 export const yeseva = Yeseva_One({
   subsets : ['latin', 'latin-ext', "cyrillic"],
@@ -20,3 +22,10 @@ export const dmsans = DM_Sans({
   display : 'swap',
   style: 'normal'
 })
+
+export const sofia = localFont({
+  src: "./fonts/SofiaProRegular.otf",
+  // variable: "--font-geist-sans",
+  weight: "400, 700",
+  display : 'swap',
+});
