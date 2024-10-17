@@ -283,7 +283,7 @@ export default function Swipe() {
   };
 
   return (
-    <div className="relative grid grid-cols-1 min-[991px]:grid-cols-2 p-6 sm:py-20 sm:px-12 gap-10 overflow-hidden">
+    <div className="relative grid grid-cols-1 min-[991px]:grid-cols-2 p-6 sm:py-20 sm:px-12 gap-10 overflow-hidden justify-items-center justify-center mx-auto max-w-7xl">
       <div className="">
         <h1 className={`${sofia.className} text-left text-4xl`}>
           Our Product Offers
