@@ -8,7 +8,7 @@ const ImgGrid = () => {
       <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden'>
         <div className='row-span-3 rounded-lg overflow-hidden'>
           <Image
-          src="/images/reliable.jpg"
+          src="/images/picture.jpg"
           alt="reliable"
           className='w-full h-full object-cover object-center'
           width={200}
@@ -19,7 +19,7 @@ const ImgGrid = () => {
         </div>
         <div className='rounded-lg h-[200px] overflow-hidden'>
           <img
-          src="/images/3dlogo.jpg"
+          src="/images/extra.jpg"
           alt="reliable"
           className='object-cover w-full h-full object-[20%]'
           width={100}
@@ -39,31 +39,31 @@ const ImgGrid = () => {
               <p className='text-base !text-white'>Your transactions are protected and safe with us</p>
             </div>
             <img 
-            src="/images/fastsecure.jpg" 
+            src="/images/securedpayment.jpg" 
             className='object-cover object-center w-full h-[300px] sm:h-full'
             alt="" />
           </div>
           <div className='rounded-lg overflow-hidden relative'>
-            <div className='absolute top-0 left-0 w-full py-4 px-3 max-w-[250px] text-lavender flex flex-col gap-2 text-lavender z-[100]'>
+            {/* <div className='absolute top-0 left-0 w-full py-4 px-3 max-w-[250px] text-lavender flex flex-col gap-2 text-lavender z-[100]'>
               <h1 className={`text-lavender font-bold text-xl ${ sofia.className }`}> 
                 Borderless Transactions
               </h1>
               <p className='text-base !text-white'>Experience the freedom of payments across the Globe</p>
-            </div>
-            <img src="/images/borderless.jpg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
+            </div> */}
+            <img src="/images/transaction.jpg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
           </div>
         </div>
         <div className='rounded-lg overflow-hidden relative h-full'>
-          <div className='absolute bottom-0 left-0 w-full py-4 px-3 max-w-[250px] flex flex-col gap-2 !text-customBlack'>
-            <h1 className={`!text-customBlack font-bold text-xl ${ sofia.className }`}>
-              Redefining e-commerce
+          <div className='absolute bottom-0 left-0 w-full py-4 px-3 max-w-[300px] flex flex-col gap-2 !text-customBlack'>
+            <h1 className={`!text-lavender font-bold text-xl ${ sofia.className }`}>
+              Redefining Finance
             </h1>
-            <p className='!text-customBlack text-base'>
-              Enjoy a seamless shopping experience with our integrated payment options
+            <p className='!text-lavenderx  text-base'>
+              Enjoy simplified access, enhanced control, and streamline your financial journey for a more empowered future
             </p>
           </div>
           <img
-            src="/images/cart.jpg"
+            src="/images/ecommerce.jpg"
             alt="reliable"
             className='w-full h-[300px] sm:h-full object-cover object-left'
             // width={200}

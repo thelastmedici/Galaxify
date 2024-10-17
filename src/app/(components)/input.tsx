@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react"
 import { confettiToggler } from '../store/uiSlice'
 
 const InputBox = ({ className, arrow } : { className : string; arrow : boolean }) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const timeline = React.useRef<gsap.core.Timeline | null>(null);
   const inputRef = React.useRef(null);
   const dispatch = useDispatch()
@@ -31,7 +32,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
   const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log(!email.includes("@"))
-    if (email.trim() === "" || !email.includes("@")) {
+    if (email.trim() === "" || !email.includes("@") || !emailRegex.test(email)) {
       timeline.current?.restart();
       return
     }

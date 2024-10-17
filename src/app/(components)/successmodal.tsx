@@ -25,7 +25,7 @@ const SuccessModal = () => {
     <>
     {
       confetti && (
-        <div className='fixed bg-black bg-opacity-90 h-screen w-full flex items-center justify-center z-[10000] top-0 left-0 !text-customBlack'>
+        <div className='fixed bg-black bg-opacity-90 h-screen w-full flex items-center justify-center z-[10000] top-0 left-0 !text-customBlack px-3'>
           <ConfettiParticle />
           <div className={`w-full max-w-[40rem] p-6 rounded-lg !text-lavender gap-6 flex flex-col ${josefin.className} text-center items-center bg-[#59595999]/25 backdrop-blur-[10px] relative !-z-10`}>
             <span className='text-base font-semibold'>
