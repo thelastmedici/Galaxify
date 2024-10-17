@@ -31,7 +31,7 @@ const Footer = () => {
             <Link href="https://x.com/useGalaxyFi" target="_blank">
               <FaXTwitter size={20} />
             </Link>
-            <Link href="https://www.instagram.com/usegalaxyfi">
+            <Link href="https://www.instagram.com/usegalaxyfi" target='_blank'>
               <FaInstagram size={20} />
             </Link>
           </div>

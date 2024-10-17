@@ -73,7 +73,7 @@ const page = () => {
             </div>
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>X</h2>
-              <Link className="text-sm" href="https://x.com/useGalaxyFi">
+              <Link className="text-sm" href="https://x.com/useGalaxyFi" target='_blank'>
                 @useGalaxyFi
               </Link>
             </div>
