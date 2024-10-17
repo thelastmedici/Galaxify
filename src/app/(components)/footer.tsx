@@ -28,10 +28,10 @@ const Footer = () => {
             <Link href="">
               <FaLinkedinIn size={20} />
             </Link>
-            <Link href="">
+            <Link href="https://x.com/useGalaxyFi" target="_blank">
               <FaXTwitter size={20} />
             </Link>
-            <Link href="">
+            <Link href="https://www.instagram.com/usegalaxyfi">
               <FaInstagram size={20} />
             </Link>
           </div>

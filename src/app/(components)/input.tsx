@@ -38,6 +38,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
     }
     console.log(email);
     dispatch(confettiToggler(true))
+    setEmail("");
     try {
       const res  = await fetch("/api/submit", {
         method : "POST",

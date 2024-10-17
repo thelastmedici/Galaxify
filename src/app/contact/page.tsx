@@ -62,8 +62,8 @@ const page = () => {
             </div>
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>Instagram</h2>
-              <Link className="text-sm" href="#">
-                @username
+              <Link className="text-sm" href="https://www.instagram.com/usegalaxyfi" target='_blank'>
+                @usegalaxyfi
               </Link>
             </div>
           </div>
@@ -73,8 +73,8 @@ const page = () => {
             </div>
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>X</h2>
-              <Link className="text-sm" href="#">
-                @username
+              <Link className="text-sm" href="https://x.com/useGalaxyFi">
+                @useGalaxyFi
               </Link>
             </div>
           </div>
