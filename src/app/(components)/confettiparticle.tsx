@@ -10,7 +10,7 @@ const ConfettiParticle = () => {
   const confetti = useSelector((state : RootState) => state.ui.confettiSwitch);
   const [init, setInit] = React.useState(false);
   
-  const lifeDurationNum = 20,
+  const lifeDurationNum = 48,
     lifeDurationFactor = 6,
     lifeDuration = lifeDurationNum / lifeDurationFactor;
 

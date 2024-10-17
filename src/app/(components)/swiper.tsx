@@ -126,7 +126,7 @@ import { GoShieldCheck } from "react-icons/go";
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards, Autoplay } from 'swiper/modules';
-import { josefin, yeseva } from '../font';
+import { yeseva, dmsans } from '../font';
 import Image from 'next/image';
 
 export default function Swipe() {
@@ -144,7 +144,7 @@ export default function Swipe() {
         <h1 className={`${yeseva.className} text-left text-4xl`}>
           Our Product Offers
         </h1>
-        <div className={`flex flex-col gap-6 mt-5 ${ josefin.className }`}>
+        <div className={`flex flex-col gap-6 mt-5 ${ dmsans.className }`}>
           {[0, 1, 2, 3].map((index) => (
             <div
               key={index}

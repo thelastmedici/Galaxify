@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import { josefin } from '@/app/font'
+import { dmsans } from '@/app/font'
 
 const ImgGrid = () => {
   return (
-    <section className={`grid grid-cols-2 md:grid-cols-3 my-10 gap-6 w-full max-w-6xl mx-auto ${ josefin.className} px-3`}>
+    <section className={`grid grid-cols-2 md:grid-cols-3 my-10 gap-6 w-full max-w-6xl mx-auto ${ dmsans.className} px-3`}>
       <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden'>
         <div className='row-span-3 rounded-lg overflow-hidden'>
           <Image

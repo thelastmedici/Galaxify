@@ -1,5 +1,5 @@
 import React from 'react'
-import { josefin, yeseva } from '../font'
+import { yeseva, dmsans } from '../font'
 import InputBox from './input'
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
           </span>
         </h1>
         <p 
-        className={`text-center text-4xl mt-4 ${josefin.className}`}
+        className={`text-center text-4xl mt-4 ${dmsans.className}`}
         >
           Your all in one app
         </p>

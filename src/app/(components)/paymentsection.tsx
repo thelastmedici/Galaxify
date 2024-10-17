@@ -1,5 +1,5 @@
 import React from 'react'
-import { josefin, yeseva } from '../font'
+import { yeseva, dmsans } from '../font'
 import InputBox from './input'
 
 const PaymentSection = () => {
@@ -10,7 +10,7 @@ const PaymentSection = () => {
           <h1 className={`${yeseva.className} text-4xl !text-white`}>
             Supercharge your payments
           </h1>
-          <p className={`${josefin.className} text-base !text-white`}>
+          <p className={`${dmsans.className} text-base !text-white`}>
             Start your journey with GalaxyFi as we save the digital space with Financial freedom
           </p>
           <InputBox
