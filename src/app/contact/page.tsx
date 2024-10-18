@@ -82,7 +82,7 @@ const page = () => {
             <div className='flex flex-col w-fit'>
               <Link href="#" className="px-4 py-2 rounded-3xl bg-[#069E06] text-base flex items-center space-x-2 font-semibold">
                 <MdWhatsapp size={20}/>
-                <span className="inline-flex">
+                <span className="inline-flex whitespace-nowrap">
                   Chat with us
                 </span>
               </Link>
