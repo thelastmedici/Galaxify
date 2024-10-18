@@ -91,3 +91,10 @@ html {
 /* * {
   outline: 1px solid red;
 } */
+
+.text-gradient {
+  background-image: linear-gradient(to bottom, #7E3FFF 20%, #7E3FFF 45%, #9aaefc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
