@@ -50,7 +50,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
         })
       })
       if (!res.ok) {
-        timeline.current?.restart();
+        // timeline.current?.restart();
         throw new Error("An error has occured")
       }
       const data  = await res.json()
@@ -59,6 +59,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       dispatch(confettiToggler(true))
     } catch(err) {
       console.error(err, "ERROR")
+      timeline.current?.restart();
     }
     setLoading(false)
   })
