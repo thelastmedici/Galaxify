@@ -1,6 +1,6 @@
 import React from 'react'
 import { dmsans, sofia } from '../font'
-import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiPhone } from "react-icons/ci";
 import { MdOutlineEmail, MdWhatsapp } from "react-icons/md";
@@ -42,18 +42,7 @@ const page = () => {
             </div>
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>Email</h2>
-              <Link href="#" className="text-sm">mail@gmail.com</Link>
-            </div>
-          </div>
-          <div className='flex flex-row gap-3'>
-            <div className="py-2">
-              <FaLinkedinIn size={24}/>
-            </div>
-            <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>LinkedIn</h2>
-              <Link className="text-sm" href="#">
-                @username
-              </Link>
+              <Link href="mailto:usegalaxyfi@gmail.com" className="text-sm">usegalaxyfi@gmail.com</Link>
             </div>
           </div>
           <div className='flex flex-row gap-3'>
