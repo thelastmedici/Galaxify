@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react"
 import { confettiToggler } from '../store/uiSlice'
 
 const InputBox = ({ className, arrow } : { className : string; arrow : boolean }) => {
+  const [ loading, setLoading ]  = React.useState(false)
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const timeline = React.useRef<gsap.core.Timeline | null>(null);
   const inputRef = React.useRef(null);
@@ -37,9 +38,8 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       return
     }
     console.log(email);
-    dispatch(confettiToggler(true))
-    setEmail("");
     try {
+      setLoading(true)
       const res  = await fetch("/api/submit", {
         method : "POST",
         headers : {
@@ -49,10 +49,18 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
           email : email
         })
       })
-      console.log(res)
+      if (!res.ok) {
+        timeline.current?.restart();
+        throw new Error("An error has occured")
+      }
+      const data  = await res.json()
+      console.log(data)
+      setEmail("");
+      dispatch(confettiToggler(true))
     } catch(err) {
       console.error(err, "ERROR")
     }
+    setLoading(false)
   })
 
 
@@ -76,8 +84,10 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
       placeholder='Your Email Address'
       />
-      <button className={`${ arrow ? 'bg-darkViolet text-lavender' : 'bg-lavender text-customBlack' } py-3 px-4 whitespace-nowrap rounded-lg w-full sm:w-fit`}>
-        Join Waitlist!
+      <button className={`${ arrow ? 'bg-darkViolet text-lavender' : 'bg-lavender text-customBlack' } py-3 px-4 whitespace-nowrap rounded-lg w-full sm:w-fit text-center`}>
+        {
+          loading ?  <img src="/images/loading.svg" className='w-6 h-6' alt='loading'/> : "Join Waitlist!"
+        } 
       </button>
     </form>
   )
