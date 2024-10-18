@@ -20,9 +20,9 @@ const PaymentSection = () => {
           />
         </div>
         <img
-        src={'/images/phoneinhand.png'}
+        src={'/images/phoneinhand.png'} 
         alt="transaction"
-        className='w-[500px] h-[500px] object-cover object-center'
+        className='w-[350px] h-[350px] min-[991px]:w-[500px] min-[991px]:h-[500px] object-cover object-center'
         // quality={100}
         />  
       </div>

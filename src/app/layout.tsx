@@ -25,7 +25,7 @@ export default function RootLayout({
       <ReduxProvider>
         <ParticleHeader />
         <body
-          className={`antialiased w-full max-w-[1440px] mx-auto  min-h-screen relative z-[0] overflow-x-hidden`}
+          className={`antialiased w-full  mx-auto  min-h-screen relative z-[0] overflow-x-hidden`}
           >
             <SuccessModal />
             {/* <ThemeProvider
@@ -34,9 +34,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
             > */}
-              <Header />
+            <Header />
+            <div className="max-w-[1440px] w-full mx-auto">
               {children}
-              <Footer />
+            </div>
+            <Footer />
             {/* </ThemeProvider> */}
         </body>  
       </ReduxProvider>
