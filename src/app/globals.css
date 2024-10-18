@@ -93,7 +93,8 @@ html {
 } */
 
 .text-gradient {
-  background-image: linear-gradient(to bottom, #7E3FFF 10%, #7E3FFF 20%, #9aaefc 100%);
+  background-position: top;
+  background-image: linear-gradient(to bottom, #7E3FFF 10%, #7E3FFF 10%, #78c6fa 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

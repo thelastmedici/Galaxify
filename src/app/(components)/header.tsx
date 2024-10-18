@@ -24,7 +24,7 @@ const Header = () => {
             [ 'contact us', '/contact' ],
             [ 'our products', '/' ]
           ].map(([text, link]) => (
-            <Link href={link} key={link}>
+            <Link href={link} key={link} className='hover:text-darkViolet transition-colors duration-200'>
               { text }
             </Link>
           ))

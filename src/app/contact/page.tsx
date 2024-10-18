@@ -31,9 +31,9 @@ const page = () => {
               <CiPhone size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>Contact</h2>
-              <Link className="text-xs" href="#">+234 999 999 999 </Link>
-              <Link className="text-xs" href="#">+234 999 999 999 </Link>
+              <h2 className={`${sofia.className} font-bold text-lg`}>Phone</h2>
+              <Link className="text-xs" href="tel:02017003102">0201 700 3102</Link>
+              {/* <Link className="text-xs" href="#">+234 999 999 999 </Link> */}
             </div>
           </div>
           <div className='flex flex-row gap-3'>

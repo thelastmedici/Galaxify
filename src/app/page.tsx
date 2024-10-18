@@ -6,12 +6,12 @@ import { dmsans } from "./font";
 
 export default function Home() {
   return (
-    <div className="mt-20">
+    <div className="">
       <div className="w-full h-screen flex items-center justify-center">
         <Hero />
       </div>
-      <div className="w-full max-w-5xl mx-auto">
-        <h1 className={`text-customBlack text-center dark:text-lavender text-3xl md:!text-4xl font-light ${dmsans.className}`}>
+      <div className="w-full max-w-5xl mx-auto my-10">
+        <h1 className={`text-center text-lavender text-3xl md:!text-4xl font-light ${dmsans.className}`}>
           Unlock a new era of financial innovation with a platform built to elevate your financial management
         </h1>
       </div>
