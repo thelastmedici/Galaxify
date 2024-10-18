@@ -5,7 +5,7 @@ import { dmsans, sofia } from '@/app/font'
 const ImgGrid = () => {
   return (
     <section className={`grid grid-cols-2 md:grid-cols-3 mb-10 gap-6 w-full max-w-6xl mx-auto ${ dmsans.className} px-3 h-fit`}>
-      <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden border'>
+      <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden'>
         <div className='row-span-3 rounded-lg overflow-hidden'>
           <Image
           src="/images/picture.jpg"
