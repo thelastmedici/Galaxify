@@ -13,7 +13,7 @@ export async function POST(req:NextRequest) {
       // secure : true,
       auth: {
         user: process.env.EMAIL_USER as string, // Your email
-        pass: process.env.EMAIL_PASS as sring, // Your email password
+        pass: process.env.EMAIL_PASS as string, // Your email password
       },
     });
 
