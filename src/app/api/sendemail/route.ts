@@ -46,6 +46,7 @@ export async function POST(req: NextRequest) {
                 Jerry Nnamezie
                 CEO, GalaxyFi`,
       });
+      
       console.log(accepted, envelope, response, pending, messageId, rejected);
     } catch (error) {
       console.log(error);

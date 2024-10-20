@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     console.log(body)
     const res = await User.create({
-      email : "abimbolababajide6@gmail.com"
+      email : body.email,
     })
     console.log(res.email)
     return NextResponse.json({ message : "Registration Successful" }, { status : 200 })
