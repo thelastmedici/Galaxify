@@ -53,7 +53,26 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
         // timeline.current?.restart();
         throw new Error("An error has occured")
       }
-      const data  = await res.json()
+      try {
+        const emailRes = await fetch('/api/sendemail', {
+          method : "POST",
+          headers : {
+            "Content-Type" : "application/json"
+          },
+          body : JSON.stringify({
+            recipientEmail : email 
+          })
+        })
+        if (!emailRes.ok) {
+          // timeline.current?.restart();
+          throw new Error("An error has occured")
+        }
+        const emailData = await emailRes.json()
+        console.log(emailData)
+      }catch(err) {
+        console.log(err, "ERROR")
+      }
+      const data = await res.json()
       console.log(data)
       setEmail("");
       dispatch(confettiToggler(true))
@@ -85,7 +104,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
       placeholder='Your Email Address'
       />
-      <button className={`${ arrow ? 'bg-darkViolet text-lavender' : 'bg-lavender text-customBlack' } py-3 px-4 whitespace-nowrap rounded-lg w-full sm:w-fit text-center`}>
+      <button className={`${ arrow ? 'bg-darkViolet text-lavender' : 'bg-lavender text-customBlack' } py-3 px-4 whitespace-nowrap rounded-lg w-full sm:w-fit text-center flex items-center justify-center`}>
         {
           loading ?  <img src="/images/loading.svg" className='w-6 h-6' alt='loading'/> : "Join Waitlist!"
         } 
