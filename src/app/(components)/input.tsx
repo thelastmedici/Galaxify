@@ -8,6 +8,8 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { confettiToggler } from '../store/uiSlice'
 
+console.log(process.env.NEXT_PUBLIC_SENDER_ACCESS_TOKEN, "ACCESS TOKEN")
+
 const InputBox = ({ className, arrow } : { className : string; arrow : boolean }) => {
   const [ loading, setLoading ]  = React.useState(false)
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -28,6 +30,29 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       ease: "power1.inOut", // Smooth in-out motion
       // repeat: -1
     })
+  })
+
+  const getCampaigns = async () => {
+    const url = new URL(
+      "https://api.sender.net/v2/campaigns?limit=10&status=DRAFT"
+  );
+  
+  const headers = {
+      "Authorization": `Bearer ${process.env.NEXT_PUBLIC_SENDER_ACCESS_TOKEN}`,
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+  };
+  
+  const res = await fetch(url, {
+    method: "GET",
+    headers,
+  })
+  const data  = await res.json()
+  console.log(data)
+  }
+
+  React.useEffect(() => {
+    getCampaigns()
   })
   
   // const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
@@ -92,48 +117,79 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
     }
   
     setLoading(true);
-  
     try {
-      // First fetch: Register the email
-      const res = await fetch("/api/submit", {
-        method: "POST",
-        headers: {
+      // const { recipientEmail } = await req.json();
+      // console.log(recipientEmail);
+      const res = await fetch("https://api.sender.net/v2/subscribers", {
+        method : "POST",
+        headers : {
+          "Authorization": `Bearer ${process.env.NEXT_PUBLIC_SENDER_ACCESS_TOKEN}`,
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
-        body: JSON.stringify({ email }),
-      });
-  
-      // If registration fails, throw an error and stop further execution
+        body : JSON.stringify({
+          email
+        })
+      })
       if (!res.ok) {
-        throw new Error("Failed to register email");
+        throw new Error("An Error occured")
       }
-  
-      // Only proceed with the second fetch if the first one succeeds
-      const emailRes = await fetch("/api/sendemail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ recipientEmail: email }),
-      });
-  
-      if (!emailRes.ok) {
-        throw new Error("Failed to send confirmation email");
-      }
-  
-      const emailData = await emailRes.json();
-      console.log(emailData);
-  
-      // Clear the email field and dispatch confetti if all succeeds
+      const response = await res.json()
+      console.log(response)
+        // Clear the email field and dispatch confetti if all succeeds
       setEmail("");
       dispatch(confettiToggler(true));
-  
-    } catch (err) {
-      console.error(err);
+      // return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 });
+    }catch(error) {
       timeline.current?.restart();
+      console.log(error)
+      // return NextResponse.json({ message: 'Error sending email', error }, { status: 500 });
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
+
+    // try {
+    //   // First fetch: Register the email
+    //   const res = await fetch("/api/submit", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ email }),
+    //   });
+  
+    //   // If registration fails, throw an error and stop further execution
+    //   if (!res.ok) {
+    //     throw new Error("Failed to register email");
+    //   }
+  
+    //   // Only proceed with the second fetch if the first one succeeds
+    //   const emailRes = await fetch("/api/sendemail", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ recipientEmail: email }),
+    //   });
+  
+    //   if (!emailRes.ok) {
+    //     throw new Error("Failed to send confirmation email");
+    //   }
+  
+    //   const emailData = await emailRes.json();
+    //   console.log(emailData);
+  
+    //   // Clear the email field and dispatch confetti if all succeeds
+    //   setEmail("");
+    //   dispatch(confettiToggler(true));
+  
+    // } catch (err) {
+    //   console.error(err);
+    //   timeline.current?.restart();
+    // } finally {
+    //   setLoading(false);
+    // }
+
   });
   
   
