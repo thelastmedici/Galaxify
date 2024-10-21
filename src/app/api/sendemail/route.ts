@@ -25,11 +25,18 @@ export async function POST(req: NextRequest) {
         to: recipientEmail, // Receiver's address
         subject: "🚀Welcome to GalaxyFi - You're officially on board!🎉", // Subject line
         html: `
+        <img 
+          src="cid:cartt@image" 
+          alt="img" 
+          width="500" 
+          height="450" 
+          style="object-fit: cover;" 
+        />
         <div>
         Thanks for joining the GalaxyFi waitlist! You’re officially on board to experience the future of finance, and we’re hyped to have you!
          <p>
             Why You’ll Love GalaxyFi:
-         </p>
+            </p>
          <ul>
             <li>
               Crypto Wallets: Buy, sell, and store crypto easily.
@@ -80,12 +87,12 @@ export async function POST(req: NextRequest) {
             </p>
           </div>
           <div>
-          <img src="cid:cartt@image" alt="img" width="400" height="400"/>
+
           `,
           attachments : [
             {
-              filename : 'cart.jpg',
-              path : path.join(process.cwd(), "./public/images/cart.jpg"),
+              filename : 'transaction.jpg',
+              path : path.join(process.cwd(), "./public/images/transaction.jpg"),
               cid : "cartt@image"
             }
           ]
