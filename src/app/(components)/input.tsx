@@ -30,59 +30,113 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
     })
   })
   
-  const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    console.log(!email.includes("@"))
-    if (email.trim() === "" || !email.includes("@") || !emailRegex.test(email)) {
-      timeline.current?.restart();
-      return
-    }
-    console.log(email);
-    try {
-      setLoading(true)
-      const res  = await fetch("/api/submit", {
-        method : "POST",
-        headers : {
-          "Content-Type" : "application/json"
-        },
-        body : JSON.stringify({
-          email : email
-        })
-      })
-      if (!res.ok) {
-        // timeline.current?.restart();
-        throw new Error("An error has occured")
-      }
-      try {
-        const emailRes = await fetch('/api/sendemail', {
-          method : "POST",
-          headers : {
-            "Content-Type" : "application/json"
-          },
-          body : JSON.stringify({
-            recipientEmail : email 
-          })
-        })
-        if (!emailRes.ok) {
-          // timeline.current?.restart();
-          throw new Error("An error has occured")
-        }
-        const emailData = await emailRes.json()
-        console.log(emailData)
-      }catch(err) {
-        console.log(err, "ERROR")
-      }
-      const data = await res.json()
-      console.log(data)
-      setEmail("");
-      dispatch(confettiToggler(true))
-    } catch(err) {
-      console.error(err, "ERROR")
-      timeline.current?.restart();
-    }
-    setLoading(false)
-  })
+  // const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault()
+  //   console.log(!email.includes("@"))
+  //   if (email.trim() === "" || !email.includes("@") || !emailRegex.test(email)) {
+  //     timeline.current?.restart();
+  //     return
+  //   }
+  //   console.log(email);
+  //   try {
+  //     setLoading(true)
+  //     const res  = await fetch("/api/submit", {
+  //       method : "POST",
+  //       headers : {
+  //         "Content-Type" : "application/json"
+  //       },
+  //       body : JSON.stringify({
+  //         email : email
+  //       })
+  //     })
+  //     if (!res.ok) {
+  //       // timeline.current?.restart();
+  //       throw new Error("An error has occured")
+  //     }
+  //     try {
+  //       const emailRes = await fetch('/api/sendemail', {
+  //         method : "POST",
+  //         headers : {
+  //           "Content-Type" : "application/json"
+  //         },
+  //         body : JSON.stringify({
+  //           recipientEmail : email 
+  //         })
+  //       })
+  //       if (!emailRes.ok) {
+  //         // timeline.current?.restart();
+  //         throw new Error("An error has occured")
+  //       }
+  //       const emailData = await emailRes.json()
+  //       console.log(emailData)
+  //     }catch(err) {
+  //       console.log(err, "ERROR")
+  //     }
+  //     const data = await res.json()
+  //     console.log(data)
+  //     setEmail("");
+  //     dispatch(confettiToggler(true))
+  //   } catch(err) {
+  //     console.error(err, "ERROR")
+  //     timeline.current?.restart();
+  //   }
+  //   setLoading(false)
+  // })
 
+  const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  
+    if (email.trim() === "" || !emailRegex.test(email)) {
+      timeline.current?.restart();
+      return;
+    }
+  
+    setLoading(true);
+  
+    try {
+      // First fetch: Register the email
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+  
+      // If registration fails, throw an error and stop further execution
+      if (!res.ok) {
+        throw new Error("Failed to register email");
+      }
+  
+      // Only proceed with the second fetch if the first one succeeds
+      const emailRes = await fetch("/api/sendemail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ recipientEmail: email }),
+      });
+  
+      if (!emailRes.ok) {
+        throw new Error("Failed to send confirmation email");
+      }
+  
+      const emailData = await emailRes.json();
+      console.log(emailData);
+  
+      // Clear the email field and dispatch confetti if all succeeds
+      setEmail("");
+      dispatch(confettiToggler(true));
+  
+    } catch (err) {
+      console.error(err);
+      timeline.current?.restart();
+    } finally {
+      setLoading(false);
+    }
+  });
+  
+  
 
   return (
     <form

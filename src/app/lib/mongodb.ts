@@ -24,6 +24,7 @@ const connectDB = async () => {
     }
   } catch (error) {
     console.log("🔴 Failed to connect to MongoDB:", (error as Error).message)
+    throw new Error("Failed to connect to MongoDB")
   }
 }
 
