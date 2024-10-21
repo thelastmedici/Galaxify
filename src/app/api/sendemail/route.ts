@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import path from "path"
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,28 +24,71 @@ export async function POST(req: NextRequest) {
         from: process.env.EMAIL_USER, // Sender's address
         to: recipientEmail, // Receiver's address
         subject: "🚀Welcome to GalaxyFi - You're officially on board!🎉", // Subject line
-        text: `Thanks for joining the GalaxyFi waitlist! You’re officially on board to experience the future of finance, and we’re hyped to have you!
+        html: `
+        <div>
+        Thanks for joining the GalaxyFi waitlist! You’re officially on board to experience the future of finance, and we’re hyped to have you!
+         <p>
+            Why You’ll Love GalaxyFi:
+         </p>
+         <ul>
+            <li>
+              Crypto Wallets: Buy, sell, and store crypto easily.
+            </li>
+            <li>
+              Naira Wallet: Seamless deposits and withdrawals in Naira.
+            </li>
+            <li>
+              Sell Gift Cards: Turn unused gift cards into cash.
+            </li>
+            <li>
+              Pay Bills & Airtime: Quick bill payments and airtime purchases.
+            </li>
+            <li>
+              US Virtual Bank Account: Get paid in USD/EUR for freelance work.
+            </li>
+            <li>
+              US Virtual Debit Card: Spend globally without the fees.
+            </li>
+            <li>
+              Cross-Border Transfers: Easy transfers to Kenya, Ghana, and South Africa.
+            </li>
+          </ul>
 
-                Why You’ll Love GalaxyFi:
-                * Crypto Wallets: Buy, sell, and store crypto easily.
-                * Naira Wallet: Seamless deposits and withdrawals in Naira.
-                * Sell Gift Cards: Turn unused gift cards into cash.
-                * Pay Bills & Airtime: Quick bill payments and airtime purchases.
-                * US Virtual Bank Account: Get paid in USD/EUR for freelance work.
-                * US Virtual Debit Card: Spend globally without the fees.
-                * Cross-Border Transfers: Easy transfers to Kenya, Ghana, and South Africa.
-
-                What’s Next?
-                * Early Access: You’ll be first in line to try out GalaxyFi.
-                * Rewards: Invite your friends and earn cool bonuses!
-
-                Got any questions? Hit us up anytime.
-
-                We can’t wait to have you on this journey!
-
-                Catch you soon,
-                Jerry Nnamezie
-                CEO, GalaxyFi`,
+          <p>
+            What’s Next?
+          </p
+          <ul>
+            <li>
+              Early Access: You’ll be first in line to try out GalaxyFi.
+            </li>
+            <li>
+              Rewards: Invite your friends and earn cool bonuses!
+            </li>
+          </ul>
+          <p>
+            Got any questions? Hit us up anytime. We can’t wait to have you on this journey!
+          </p>
+          <div>
+            <p>
+              Catch you soon,
+            </p>
+            <p>
+              Jerry Nnamezie
+            </p>
+            <p>
+              CEO, GalaxyFi 
+            </p>
+          </div>
+          <div>
+          <img src="cid:cartt@image" alt="img" width="400" height="400"/>
+          `,
+          attachments : [
+            {
+              filename : 'cart.jpg',
+              path : path.join(process.cwd(), "./public/images/cart.jpg"),
+              cid : "cartt@image"
+            }
+          ]
       });
       
       console.log(accepted, envelope, response, pending, messageId, rejected);
