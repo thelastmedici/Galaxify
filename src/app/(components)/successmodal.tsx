@@ -29,7 +29,7 @@ const SuccessModal = () => {
           <ConfettiParticle />
           <div className={`w-full max-w-[40rem] p-6 rounded-lg !text-lavender gap-6 flex flex-col ${josefin.className} text-center items-center bg-[#59595999]/25 backdrop-blur-[10px] relative !-z-10`}>
             <span className='text-base font-semibold'>
-              🎉 Awesome Sauce!
+              🎉 Yay!!!!!
             </span>
 
             <h1 className="text-6xl font-bold tracking-tight !text-lavender">
@@ -37,7 +37,7 @@ const SuccessModal = () => {
             </h1>
 
             <p className="!text-lavender text-lg">
-              You&apos;re all set! We&apos;ll keep you updated with the latest news and let you know as soon as we launch. Stay tuned!
+              You&apos;re all set! We&apos;ll keep you updated with the latest news and notify you as soon as we launch. Stay tuned!
             </p>
 
             <button 
