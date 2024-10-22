@@ -37,7 +37,7 @@ const SuccessModal = () => {
             </h1>
 
             <p className="!text-lavender text-lg">
-              You&apos;re all set! We&apos;ll keep you updated with the latest news and let you know as soon as we launch. Stay tuned!
+              You&apos;re all set! We&apos;ll keep you updated with the latest news and notify you as soon as we launch. Stay tuned!
             </p>
 
             <button 
