@@ -31,82 +31,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       // repeat: -1
     })
   })
-
-  const getCampaigns = async () => {
-    const url = new URL(
-      "https://api.sender.net/v2/campaigns?limit=10&status=DRAFT"
-  );
   
-  const headers = {
-      "Authorization": `Bearer ${process.env.NEXT_PUBLIC_SENDER_ACCESS_TOKEN}`,
-      "Content-Type": "application/json",
-      "Accept": "application/json",
-  };
-  
-  const res = await fetch(url, {
-    method: "GET",
-    headers,
-  })
-  const data  = await res.json()
-  console.log(data)
-  }
-
-  React.useEffect(() => {
-    getCampaigns()
-  })
-  
-  // const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault()
-  //   console.log(!email.includes("@"))
-  //   if (email.trim() === "" || !email.includes("@") || !emailRegex.test(email)) {
-  //     timeline.current?.restart();
-  //     return
-  //   }
-  //   console.log(email);
-  //   try {
-  //     setLoading(true)
-  //     const res  = await fetch("/api/submit", {
-  //       method : "POST",
-  //       headers : {
-  //         "Content-Type" : "application/json"
-  //       },
-  //       body : JSON.stringify({
-  //         email : email
-  //       })
-  //     })
-  //     if (!res.ok) {
-  //       // timeline.current?.restart();
-  //       throw new Error("An error has occured")
-  //     }
-  //     try {
-  //       const emailRes = await fetch('/api/sendemail', {
-  //         method : "POST",
-  //         headers : {
-  //           "Content-Type" : "application/json"
-  //         },
-  //         body : JSON.stringify({
-  //           recipientEmail : email 
-  //         })
-  //       })
-  //       if (!emailRes.ok) {
-  //         // timeline.current?.restart();
-  //         throw new Error("An error has occured")
-  //       }
-  //       const emailData = await emailRes.json()
-  //       console.log(emailData)
-  //     }catch(err) {
-  //       console.log(err, "ERROR")
-  //     }
-  //     const data = await res.json()
-  //     console.log(data)
-  //     setEmail("");
-  //     dispatch(confettiToggler(true))
-  //   } catch(err) {
-  //     console.error(err, "ERROR")
-  //     timeline.current?.restart();
-  //   }
-  //   setLoading(false)
-  // })
 
   const handleSubmit = contextSafe(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -128,7 +53,8 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
           "Accept": "application/json",
         },
         body : JSON.stringify({
-          email
+          email,
+          groups : ["bqD8wD"]
         })
       })
       if (!res.ok) {
