@@ -259,7 +259,7 @@ const slideContent = [
     icon: <TbGiftCard size={24}/>,
     title: "Manage Your Gift Cards",
     description: "Effortlessly manage, redeem, and transfer your gift cards all in one place. Unlock the full potential of your gift cards with a seamless and secure experience.",
-    image: "/images/phonecard.png"
+    image: "/images/gift_card.jpg"
   },
   {
     icon: <IoWalletOutline size={24}/>,
@@ -333,7 +333,7 @@ export default function Swipe() {
                 height={300}
                 alt={content.title}
                 quality={100}
-                className='w-full h-full'
+                className='w-full h-full object-cover object-top'
               />
             </SwiperSlide>
           ))}
