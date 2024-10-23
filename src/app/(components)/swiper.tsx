@@ -259,7 +259,7 @@ const slideContent = [
     icon: <TbGiftCard size={24}/>,
     title: "Manage Your Gift Cards",
     description: "Effortlessly manage, redeem, and transfer your gift cards all in one place. Unlock the full potential of your gift cards with a seamless and secure experience.",
-    image: "/images/gift_card.jpg"
+    image: "/images/gift_card.png"
   },
   {
     icon: <IoWalletOutline size={24}/>,
