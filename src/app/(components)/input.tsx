@@ -1,7 +1,6 @@
 
 "use client"
 import React from 'react'
-import { josefin } from '../font'
 import Arrow from './ui/arrow'
 import { useDispatch } from 'react-redux'
 import gsap from "gsap"
@@ -124,7 +123,7 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
     <form
     noValidate
     onSubmit={handleSubmit}
-    className={`${className} w-full flex flex-col sm:flex-row items-center justify-center ${josefin.className} gap-3 relative inputt`} 
+    className={`${className} w-full flex flex-col sm:flex-row items-center justify-center gap-3 relative inputt`} 
     ref={inputRef}>
       {
         arrow && (

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import React from 'react'
 import { dmsans, sofia } from '@/app/font'
 
@@ -7,14 +7,14 @@ const ImgGrid = () => {
     <section className={`grid grid-cols-2 md:grid-cols-3 mb-10 gap-6 w-full max-w-6xl mx-auto ${ dmsans.className} px-3 h-fit`}>
       <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden'>
         <div className='row-span-3 rounded-lg overflow-hidden'>
-          <Image
+          <img
           src="/images/picture.jpg"
           alt="reliable"
           className='w-full h-full object-cover object-center'
           width={200}
           height={700}
-          quality={"100"}
-          priority={false}
+          // quality={"100"}
+          // priority={false}
           />
         </div>
         <div className='rounded-lg h-[200px] overflow-hidden'>
