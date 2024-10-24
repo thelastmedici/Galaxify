@@ -7,7 +7,6 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { confettiToggler } from '../store/uiSlice'
 
-console.log(process.env.NEXT_PUBLIC_SENDER_ACCESS_TOKEN, "ACCESS TOKEN")
 
 const InputBox = ({ className, arrow } : { className : string; arrow : boolean }) => {
   const [ loading, setLoading ]  = React.useState(false)
@@ -59,8 +58,6 @@ const InputBox = ({ className, arrow } : { className : string; arrow : boolean }
       if (!res.ok) {
         throw new Error("An Error occured")
       }
-      const response = await res.json()
-      console.log(response)
         // Clear the email field and dispatch confetti if all succeeds
       setEmail("");
       dispatch(confettiToggler(true));

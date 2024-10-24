@@ -10,17 +10,14 @@ import { RootState } from '../store';
 
 export default function ParticleHeader() {
   const theme1 = useSelector((state:RootState) => state.ui.theme)
-  console.log(theme1);
   const [init, setInit] = React.useState(false);
   const { theme, systemTheme} = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [bgColor, setBgColor] = React.useState("");
-  console.log(bgColor);
   const [particleColor, setParticleColor] = React.useState("");
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  console.log(currentTheme, theme);
-
+  console.log(bgColor)
   React.useEffect(() => {
     setMounted(true);
     if (mounted) {
