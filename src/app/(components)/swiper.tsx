@@ -242,6 +242,7 @@ import { Zap } from "lucide-react";
 import { IoWalletOutline } from "react-icons/io5";
 import { GoShieldCheck } from "react-icons/go";
 import { TbGiftCard } from "react-icons/tb";
+import { CiCreditCard2 } from "react-icons/ci";
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards, Autoplay } from 'swiper/modules';
@@ -259,6 +260,12 @@ const slideContent = [
     title: "Manage Your Gift Cards",
     description: "Effortlessly manage, redeem, and transfer your gift cards all in one place. Unlock the full potential of your gift cards with a seamless and secure experience.",
     image: "/images/gift_card.png"
+  },
+  {
+    icon: <CiCreditCard2 size={24}/>,
+    title: "Smart Payments with Virtual Cards",
+    description: "Generate your virtual card instantly for online shopping or subscriptions, set limits, freeze, or cancel virtual cards directly from your app.",
+    image: "/images/virtual_card.png"
   },
   {
     icon: <IoWalletOutline size={24}/>,
