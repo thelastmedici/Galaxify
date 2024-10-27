@@ -47,12 +47,12 @@ const Footer = () => {
               <li>Products</li>
             </ul>
           </div>
-          <div className='flex flex-col gap-5'>
+          {/* <div className='flex flex-col gap-5'>
             <h1 className={`!text-white ${sofia.className} text-xl`}>Products</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
               
             </ul>
-          </div>
+          </div> */}
           <div className='flex flex-col gap-5'>
             <h1 className={`!text-white ${sofia.className} text-xl`}>Support</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>

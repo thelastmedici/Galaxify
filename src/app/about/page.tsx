@@ -17,7 +17,7 @@ const page = () => {
             To be the leading digital finance solution in Africa and beyond, uniting the world of traditional and decentralized finance into a seamless, accessible experience for all. We envision a future where GalaxyFi stands as a bridge, connecting users with limitless financial services and helping them thrive in a global, digital economy.
             </p>
           </div>
-          <img src="/images/our_vision.png" alt="our vision" className='order-first md:order-last'/>
+          <img src="/images/our_vision.png" alt="our vision" className='order-first'/>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-between items-center">
           <img src="/images/our_mission.png" alt="our mission" className='order-first md:order-last'/>
