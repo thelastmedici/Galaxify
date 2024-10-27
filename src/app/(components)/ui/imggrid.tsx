@@ -4,11 +4,11 @@ import { dmsans, sofia } from '@/app/font'
 
 const ImgGrid = () => {
   return (
-    <section className={`grid grid-cols-2 md:grid-cols-3 mb-10 gap-6 w-full max-w-6xl mx-auto ${ dmsans.className} px-3 h-fit`}>
-      <div className='h-full rounded-lg md:grid grid-row-4 gap-6 hidden'>
+    <section className={`grid grid-cols-2 md:grid-cols-2 mb-10 gap-6 w-full max-w-6xl mx-auto ${ dmsans.className} px-3 h-fit`}>
+      <div className='h-full rounded-lg grid-row-4 gap-6 hidden'>
         <div className='row-span-3 rounded-lg overflow-hidden'>
           <img
-          src="/images/picture.jpg"
+          src="/images/picture.svg"
           alt="reliable"
           className='w-full h-full object-cover object-center'
           width={200}
@@ -19,7 +19,7 @@ const ImgGrid = () => {
         </div>
         <div className='rounded-lg h-[200px] overflow-hidden'>
           <img
-          src="/images/extra.jpg"
+          src="/images/extra.svg"
           alt="reliable"
           className='object-cover w-full h-full object-[20%]'
           width={100}
@@ -39,7 +39,7 @@ const ImgGrid = () => {
               <p className='text-base !text-white'>Your transactions are protected and safe with GalaxyFi</p>
             </div>
             <img 
-            src="/images/securedpayment.jpg" 
+            src="/images/securedpayment.svg" 
             className='object-cover object-center w-full h-[300px] sm:h-full'
             alt="" />
           </div>
@@ -50,10 +50,10 @@ const ImgGrid = () => {
               </h1>
               <p className='text-base !text-white'>Experience the freedom of payments across the Globe</p>
             </div> */}
-            <img src="/images/transaction.jpg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
+            <img src="/images/transaction.svg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
           </div>
         </div>
-        <div className='rounded-lg overflow-hidden relative h-fit sm:h-full'>
+        <div className='rounded-lg overflow-hidden relative h-fit'>
           <div className='absolute bottom-0 left-0 w-full py-4 px-3 max-w-[300px] flex flex-col gap-2 !text-customBlack'>
             <h1 className={`!text-lavender font-bold text-xl ${ sofia.className }`}>
               Redefining Finance
@@ -63,9 +63,9 @@ const ImgGrid = () => {
             </p>
           </div>
           <img
-            src="/images/ecommerce.jpg"
+            src="/images/ecommerce.svg"
             alt="reliable"
-            className='w-full h-[300px] sm:h-full object-cover object-left'
+            className='w-full h-[300px] sm:h-[500px] object-cover object-left'
             // width={200}
             // height={200}
             // quality={100}
