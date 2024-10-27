@@ -5,7 +5,7 @@ import { dmsans, sofia} from '../font'
 const Hero = () => {
   return (
     <section className="w-full max-w-7xl mx-auto sm:px-3">
-      <div className="flex items-center justify-between space-x-6">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between space-x-6 space-y-6">
         <div className="">
           <div className=''>
             <h1 
@@ -32,7 +32,7 @@ const Hero = () => {
           /> */}
         </div>
 
-        <div className="flex justify-end items-center w-fit">
+        <div className="flex justify-end items-center w-fit flex-1">
           <img src="/images/picture.svg" alt="picture"  className="w-[500] h-[500] object-cover object-top rounded-md"/>
         </div>
       </div>
