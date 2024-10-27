@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="w-full max-w-7xl mx-auto sm:px-3">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between space-x-6 space-y-6">
+    <section className="w-full max-w-7xl mx-auto px-3">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6">
         <div className="">
           <div className=''>
             <h1 
