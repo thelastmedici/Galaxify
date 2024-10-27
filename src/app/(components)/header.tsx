@@ -20,9 +20,9 @@ const Header = () => {
       <div className={`sm:flex items-center gap-6 text-light tracking-normal hidden`}>
         {
           [
-            ['about us', '/'],
+            ['about us', '/about'],
             [ 'contact us', '/contact' ],
-            [ 'our products', '/' ]
+            // [ 'our products', '/' ]
           ].map(([text, link]) => (
             <Link href={link} key={link} className='hover:text-darkViolet transition-colors duration-200'>
               { text }

@@ -42,7 +42,7 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <h1 className={`!text-white ${sofia.className} text-xl`}>Company</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
-              <li>About us</li>
+              <Link href="/about">About us</Link>
               <Link href="/contact">Contact us</Link>
               <li>Products</li>
             </ul>
