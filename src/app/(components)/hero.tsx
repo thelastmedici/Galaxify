@@ -1,5 +1,6 @@
 import React from 'react'
 import { dmsans, sofia} from '../font'
+import Link from 'next/link'
 // import InputBox from './input'
 
 const Hero = () => {
@@ -21,9 +22,16 @@ const Hero = () => {
             >
               Your all in one app
             </p>
-            <h1 className={`${sofia.className} text-center text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
+            {/* <h1 className={`${sofia.className} text-center text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
               Join the Waitlist
-            </h1>
+            </h1> */}
+            <div className="text-center w-full !mt-4">
+              <Link 
+              className="py-2 px-4 rounded-md bg-darkViolet text-lavender text-xl !w-full !mt-5"
+              href="/waitlist">
+                Join Waitlist
+              </Link>
+            </div>
           </div>
           {/* <InputBox 
           arrow={true}

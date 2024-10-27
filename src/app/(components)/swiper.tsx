@@ -247,6 +247,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards, Autoplay } from 'swiper/modules';
 import { dmsans, sofia } from '../font';
+import Image from 'next/image';
 
 const slideContent = [
   {
@@ -333,12 +334,12 @@ export default function Swipe() {
         >
           {slideContent.map((content, index) => (
             <SwiperSlide key={index}>
-              <img
+              <Image
                 src={content.image}
                 width={300}
                 height={300}
                 alt={content.title}
-                // quality={100}
+                quality={50}
                 className='w-full h-full object-cover object-top'
               />
             </SwiperSlide>
