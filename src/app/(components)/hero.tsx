@@ -34,10 +34,10 @@ const Hero = () => {
             </div>
             <div className="flex flex-row gap-3 smgap-6 mt-6">
               <Link href="#">
-                <img src="/images/appstore.png" alt="appstore"/>
+                <img src="/images/googleplay.png" alt="googleplay"/>
               </Link>
               <Link href="#">
-                <img src="/images/googleplay.png" alt="googleplay"/>
+                <img src="/images/appstore.png" alt="appstore"/>
               </Link>
             </div>
           </div>
