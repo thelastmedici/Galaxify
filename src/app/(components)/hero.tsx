@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="w-full max-w-7xl mx-auto px-3">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6">
         <div className="">
-          <div className=''>
+          <div className='flex flex-col gap-6 items-center'>
             <h1 
             className={`${ sofia.className } text-center min-[400px]:text-[80px] text-[60px] sm:text-[80px] md:text-[144px] tracking-wider leading-tight font-bold text-gradient`}>
               Galaxy
@@ -18,7 +18,7 @@ const Hero = () => {
               </span>
             </h1>
             <p 
-            className={`text-center text-4xl mt-4 ${dmsans.className}`}
+            className={`text-center text-4xl ${dmsans.className}`}
             >
               Your all in one app
             </p>
@@ -30,6 +30,14 @@ const Hero = () => {
               className="py-2 px-4 rounded-md bg-darkViolet text-lavender text-xl !w-full !mt-5"
               href="/waitlist">
                 Join Waitlist
+              </Link>
+            </div>
+            <div className="flex flex-row gap-3 smgap-6 mt-6">
+              <Link href="#">
+                <img src="/images/appstore.png" alt="appstore"/>
+              </Link>
+              <Link href="#">
+                <img src="/images/googleplay.png" alt="googleplay"/>
               </Link>
             </div>
           </div>
