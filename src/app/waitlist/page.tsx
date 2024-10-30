@@ -17,12 +17,12 @@ const Page = () => {
       
       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center mt-20 gap-8 md:gap-10 rounded-xl mb-10 overflow-hidden px-3'>
         <div className="max-w-[350px] flex gap-3 items-center">
-          <h1 className={`text-5xl font-bold ${dmsans.className}`}>
+          <h1 className={`text-3xl md:text-5xl font-bold ${dmsans.className}`}>
             Be the first to know when we launch
           </h1>
         </div>  
 
-        <div className='flex flex-col gap-6 py-4 px-3 md:px-6 justify-center items-center'>
+        <div className='flex flex-col gap-6 md:px-6 md:justify-center md:items-center'>
           <InputBox
           arrow={false}
           key={2}

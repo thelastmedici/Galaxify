@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="w-full min-h-screen !text-lavender">
       <section className="w-full h-[40vh] bg-[url('/images/noise.png')] mt-[60.08px] rounded-b-3xl flex flex-col items-center justify-center">
-        <h1 className={`${ dmsans.className} text-40 md:!text-[70px] font-bold text-darkViolet`}>
+        <h1 className={`${ dmsans.className} text-[40px] md:!text-[70px] font-bold text-darkViolet`}>
           Contact us
         </h1>
         <p className={`${ sofia.className } text-lg`}>
@@ -20,7 +20,7 @@ const page = () => {
 
       <section className='p-10 max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-y-10'>
         <div className=''>
-          <h1 className={`${ dmsans.className} !text-5xl font-bold`}>
+          <h1 className={`text-3xl md:text-5xl font-bold ${dmsans.className}`}>
             Connect with us
           </h1>
         </div>

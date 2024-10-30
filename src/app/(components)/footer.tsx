@@ -1,6 +1,6 @@
 import React from 'react'
 import { dmsans, sofia } from '../font'
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";import Link from 'next/link';
 import Image from 'next/image';
 ;
@@ -22,17 +22,17 @@ const Footer = () => {
             />
           </div>
           <div className='w-full flex gap-x-6 flex-row'>
-            <Link href="#">
+            {/* <Link href="#">
               <FaFacebookF size={20} />
             </Link>
             <Link href="">
               <FaLinkedinIn size={20} />
+            </Link> */}
+            <Link href="https://www.instagram.com/usegalaxyfi" target='_blank'>
+              <FaInstagram size={20} />
             </Link>
             <Link href="https://x.com/useGalaxyFi" target="_blank">
               <FaXTwitter size={20} />
-            </Link>
-            <Link href="https://www.instagram.com/usegalaxyfi" target='_blank'>
-              <FaInstagram size={20} />
             </Link>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => {
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
               <Link href="/about">About us</Link>
               <Link href="/contact">Contact us</Link>
-              <li>Products</li>
+              {/* <li>Products</li> */}
             </ul>
           </div>
           {/* <div className='flex flex-col gap-5'>
@@ -56,8 +56,8 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <h1 className={`!text-white ${sofia.className} text-xl`}>Support</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
-              <li>Help Center</li>
-              <li>FAQ</li>
+              <li className="cursor-not-allowed">Help Center</li>
+              <li className="cursor-not-allowed">FAQ</li>
             </ul>
           </div>
         </div>

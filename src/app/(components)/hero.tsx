@@ -67,7 +67,7 @@ const Hero = () => {
   return (
     <section className="w-full max-w-7xl mx-auto px-4 md:px-8">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6">
-        <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+        <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-4">
           <h1 
             className={`${sofia.className} text-[60px] sm:text-[64px] md:text-[80px] lg:text-[96px] xl:text-[120px] leading-tight font-bold text-gradient tracking-tight`}>
             Galaxy<span className="capitalize">Fi</span>
@@ -88,12 +88,12 @@ const Hero = () => {
               Join Waitlist
             </Link>
           </div>
-          <div className="flex gap-4 sm:gap-6 mt-6">
+          <div className="flex gap-2 sm:gap-4 mt-6">
             <Link href="#">
-              <img src="/images/googleplay.png" alt="googleplay" className="w-28 sm:w-32 lg:w-36"/>
+              <img src="/images/googleplay.png" alt="googleplay" className=""/>
             </Link>
             <Link href="#">
-              <img src="/images/appstore.png" alt="appstore" className="w-28 sm:w-32 lg:w-36"/>
+              <img src="/images/appstore.png" alt="appstore" className=""/>
             </Link>
           </div>
         </div>
