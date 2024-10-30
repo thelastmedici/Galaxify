@@ -277,7 +277,7 @@ const slideContent = [
   {
     icon: <GoShieldCheck size={24}/>,
     title: "Payment Protected",
-    description: "Your payment=s are secured with advanced encryption and fraud detection. Experience peace of mind knowing that every transaction is protected, allowing you to shop and manage finances worry-free.",
+    description: "Your payments are secured with advanced encryption and fraud detection. Experience peace of mind knowing that every transaction is protected, allowing you to shop and manage finances worry-free.",
     image: "/images/paymentsecured.png"
   }
 ];
