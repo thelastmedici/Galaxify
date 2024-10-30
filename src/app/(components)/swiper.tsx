@@ -254,31 +254,31 @@ const slideContent = [
     icon: <Zap size={24}/>,
     title: "Swift Transactions",
     description: "Enjoy the benefits of swift transactions, ensuring your funds move quickly and securely. Experience financial agility like never before.",
-    image: "/images/Transactions.svg"
+    image: "/images/Transactions.png"
   },
   {
     icon: <TbGiftCard size={24}/>,
     title: "Manage Your Gift Cards",
     description: "Effortlessly manage, redeem, and transfer your gift cards all in one place. Unlock the full potential of your gift cards with a seamless and secure experience.",
-    image: "/images/gift_card.svg"
+    image: "/images/gift_card.png"
   },
   {
     icon: <CiCreditCard2 size={24}/>,
     title: "Smart Payments with Virtual Cards",
     description: "Generate your virtual card instantly for online shopping or subscriptions, set limits, freeze, or cancel virtual cards directly from your app.",
-    image: "/images/virtual_card.svg"
+    image: "/images/virtual_card.png"
   },
   {
     icon: <IoWalletOutline size={24}/>,
     title: "Streamlined Bill Payment",
     description: "Take control of your finances with streamlined USD bill payments. Effortlessly manage and pay your bills in one place. Simplify bill payments with an intuitive and seamless interface.",
-    image: "/images/phones.svg"
+    image: "/images/phones.png"
   },
   {
     icon: <GoShieldCheck size={24}/>,
     title: "Payment Protected",
-    description: "Your payments are secured with advanced encryption and fraud detection. Experience peace of mind knowing that every transaction is protected, allowing you to shop and manage finances worry-free.",
-    image: "/images/paymentsecured.svg"
+    description: "Your payment=s are secured with advanced encryption and fraud detection. Experience peace of mind knowing that every transaction is protected, allowing you to shop and manage finances worry-free.",
+    image: "/images/paymentsecured.png"
   }
 ];
 

@@ -39,7 +39,7 @@ const ImgGrid = () => {
               <p className='text-base !text-white'>Your transactions are protected and safe with GalaxyFi</p>
             </div>
             <img 
-            src="/images/securedpayment.svg" 
+            src="/images/securedpayment.jpg" 
             className='object-cover object-center w-full h-[300px] sm:h-full'
             alt="" />
           </div>
@@ -50,7 +50,7 @@ const ImgGrid = () => {
               </h1>
               <p className='text-base !text-white'>Experience the freedom of payments across the Globe</p>
             </div> */}
-            <img src="/images/transaction.svg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
+            <img src="/images/transaction.jpg" alt="" className='object-cover object-center scale-105 w-full h-[300px] sm:h-full'/>
           </div>
         </div>
         <div className='rounded-lg overflow-hidden relative h-fit'>
@@ -63,7 +63,7 @@ const ImgGrid = () => {
             </p>
           </div>
           <img
-            src="/images/ecommerce.svg"
+            src="/images/ecommerce.jpg"
             alt="reliable"
             className='w-full h-[300px] sm:h-[500px] object-cover object-left'
             // width={200}
