@@ -69,8 +69,8 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center space-x-3">
-            <img src="/images/googleplay.png" alt=""  className='w-28 h-16 object-contain'/>
-            <img src="/images/appstore.png" alt="" className='w-28 h-16 object-contain'/>
+            <img src="/images/googleplay.png" alt="googleplay" className=""/>
+            <img src="/images/appstore.png" alt="appstore" className=""/> 
           </div>
         </div>
 
