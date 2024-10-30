@@ -7,7 +7,7 @@ import { dmsans } from "./font";
 export default function Home() {
   return (
     <div className="">
-      <div className="w-full min-h-screen flex items-center justify-center my-20 md:mt-0">
+      <div className="w-full min-h-screen flex items-center justify-center my-20">
         <Hero />
       </div>
       <div className="w-full max-w-5xl mx-auto my-10">
