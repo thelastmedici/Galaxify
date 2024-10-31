@@ -56,8 +56,8 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <h1 className={`!text-white ${sofia.className} text-xl`}>Support</h1>
             <ul className={`${dmsans.className} flex flex-col gap-3 text-base font-medium`}>
-              <li className="cursor-not-allowed">Help Center</li>
-              <li className="cursor-not-allowed">FAQ</li>
+              {/* <li className="cursor-not-allowed">Help Center</li> */}
+              <Link href="/faq" className="">FAQ</Link>
             </ul>
           </div>
         </div>
