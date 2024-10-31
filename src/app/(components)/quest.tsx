@@ -52,7 +52,7 @@ const Quest = forwardRef<HTMLDivElement, QuestProps>(({ item, index }, ref) => {
             ref={rotateElement1Ref}
           />
           <div
-            className="absolute top-[45%] left-[0] w-full h-1 bg-white group-hover:bg-darkViolet shadow-white shadow-lg duration-200 transition-colors rounded horizontal"
+            className="absolute top-[44%] left-[.5] w-full h-1 bg-white group-hover:bg-darkViolet shadow-white shadow-lg duration-200 transition-colors rounded horizontal"
             ref={rotateElement2Ref}
           />
         </div>
