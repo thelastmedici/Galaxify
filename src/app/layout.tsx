@@ -6,6 +6,7 @@ import ParticleHeader from "./(components)/particleheader";
 import Footer from "./(components)/footer";
 import { ReduxProvider } from "./(providers)/reduxprovider";
 import SuccessModal from "./(components)/successmodal";
+import Questions from "./(components)/questions";
 
 export const metadata: Metadata = {
   title: "GalaxyFi",
@@ -37,6 +38,7 @@ export default function RootLayout({
             <Header />
             <div className="max-w-[1440px] w-full mx-auto">
               {children}
+              <Questions />
             </div>
             <Footer />
             {/* </ThemeProvider> */}

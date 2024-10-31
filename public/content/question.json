@@ -1,0 +1,121 @@
+[
+  {
+    "question" : "What is GalaxyFi?",
+    "list" : false,
+    "answer" : [
+      "GalaxyFi is a digital financial platform that offers a range of services, including crypto wallets, in-app local currency wallets, virtual debit cards, bill payments, and gift card trading. Our goal is to make financial transactions affordable, accessible, and seamless."
+    ]
+  },
+  {
+    "question" : "What currencies does GalaxyFi support?",
+    "list" : false,
+    "answer" : [
+      "We support multi-currency wallets, including Nigerian Naira (NGN), Ghanaian Cedi (GHS), Kenyan Shilling (KES), and South African Rand (ZAR). Users can hold and transact in these local currencies as well as access top global cryptocurrencies."
+    ]
+  },
+  {
+    "question" : "Can GalaxyFi be used as a storage wallet for crypto?",
+    "list" : false,
+    "answer" : [
+      "Yes! GalaxyFi includes a secure storage option for cryptocurrency. You can hold your crypto within GalaxyFi and easily access it when needed for transactions or trading."
+    ]
+  },
+  {
+    "question" : "How can I deposit or withdraw funds?",
+    "list" : false,
+    "answer" : [
+      "GalaxyFi offers easy deposit and withdrawal options for both fiat and crypto wallets. To deposit or withdraw, navigate to your wallet, select the currency, and choose your preferred method of transaction."
+    ]
+  },
+  {
+    "question" : "What are the fees for GalaxyFi’s services?",
+    "list" : false,
+    "answer" : [
+      "GalaxyFi strives to keep fees low across all services. For specific fee details, check the relevant sections within the app or contact support."
+    ]
+  },
+  {
+    "question" : "Does GalaxyFi charge for international transactions?",
+    "list" : false,
+    "answer" : [
+      "No, GalaxyFi does not charge foreign transaction fees when using our international virtual debit card, making it ideal for freelancers and anyone who needs to transact across borders."
+    ]
+  },
+  {
+    "question" : "What can I do with the virtual debit card?",
+    "list" : false,
+    "answer" : [
+      "GalaxyFi's virtual debit card can be used for online purchases, subscriptions, and international transactions. It’s also a convenient way for freelancers to receive earnings directly in Naira via a linked US bank account."
+    ]
+  },
+  {
+    "question" : "How does the gift card feature work?",
+    "list" : false,
+    "answer" : [
+      "GalaxyFi allows users to buy and sell gift cards at competitive rates. Just upload your gift card details, and GalaxyFi will verify and process the sale, providing a convenient way to turn gift cards into cash."
+    ]
+  },
+  {
+    "question" : "Can I pay bills with GalaxyFi?",
+    "list" : false,
+    "answer" : [
+      "Yes, GalaxyFi supports bill payments directly within the app, allowing you to settle essential bills seamlessly and efficiently."
+    ]
+  },
+  {
+    "question" : "Are exchange rates competitive on GalaxyFi?",
+    "list" : false,
+    "answer" : [
+      "Absolutely! We offer highly competitive exchange rates for both fiat and crypto transactions, helping you get the best value on every transaction."
+    ]
+  },
+  {
+    "question" : "Does GalaxyFi offer virtual USD accounts?",
+    "list" : false,
+    "answer" : [
+      "Yes, GalaxyFi provides the lowest price in the market for creating a virtual USD account, available for just $3, usable with Visa or Mastercard for international transactions."
+    ]
+  },
+  {
+    "question" : "Can I send funds to other GalaxyFi users?",
+    "list" : false,
+    "answer" : [
+      "Yes, GalaxyFi supports peer-to-peer (P2P) transfers, allowing you to send both fiat and crypto funds to other GalaxyFi users easily. This includes all supported currencies."
+    ]
+  },
+  {
+    "question" : "Can I trade between fiat and crypto on GalaxyFi?",
+    "list" : false,
+    "answer" : [
+      "Yes, GalaxyFi enables fiat-to-crypto and crypto-to-fiat transactions, allowing users to seamlessly switch between traditional currencies and cryptocurrencies within the app."
+    ]
+  },
+  {
+    "question" : "How do referrals work on GalaxyFi?",
+    "list" : false,
+    "answer" : [
+      "Invite friends to join GalaxyFi through your unique referral code, and both you and your friend may receive rewards once they complete their first transaction."
+    ]
+  },
+  {
+    "question" : "Is my account secure?",
+    "list" : false,
+    "answer" : [
+      "Yes, GalaxyFi takes security seriously. We employ strong encryption, regular audits, and multiple layers of authentication to protect your data and funds."
+    ]
+  },
+  {
+    "question" : "How long does KYC verification take on GalaxyFi?",
+    "list" : false,
+    "answer" : [
+      "Our KYC verification is quick and can be completed in minutes, giving you faster access to all GalaxyFi features."
+    ]
+  },
+  {
+    "question" : "How can I reach customer support?",
+    "list" : false,
+    "answer" : [
+      "Our support team is here to help! Contact us through the in-app support feature, chat with us, or submit a support ticket. You can also reach us via email at support@galaxyfi.com or call our customer support line at 0201 700 3102."
+    ]
+  }
+]

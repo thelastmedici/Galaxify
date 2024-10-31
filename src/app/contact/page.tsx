@@ -42,7 +42,7 @@ const page = () => {
             </div>
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>Email</h2>
-              <Link href="mailto:usegalaxyfi@gmail.com" className="text-sm">usegalaxyfi@gmail.com</Link>
+              <Link href="mailto:support@usegalaxyfi.com" className="text-sm">support@usegalaxyfi.com</Link>
             </div>
           </div>
           <div className='flex flex-row gap-3'>
