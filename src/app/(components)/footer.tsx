@@ -8,8 +8,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-darkViolet w-full py-12 flex flex-row px-6 lg:px-3 !text-white">
-      <div className='w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-10'>
+    <footer className="bg-darkViolet w-full flex flex-col px-6 lg:px-3 !text-white">
+      <div className='w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 my-12'>
         {/* left */}
         <div className='flex flex-col justify-between space-y-10'>
           <div className='flex space-x-2 items-center'>
@@ -69,11 +69,15 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center space-x-3">
-            <img src="/images/googleplay.png" alt="googleplay" className=""/>
-            <img src="/images/appstore.png" alt="appstore" className=""/> 
+            <img src="/images/googleplay.png" alt="googleplay" className="w-28"/>
+            <img src="/images/appstore.png" alt="appstore" className="w-28"/> 
           </div>
         </div>
-
+      </div>
+      <div className={`w-full flex items-center py-2 justify-center max-w-6xl mx-auto ${dmsans.className}`}>
+        <div className='flex items-center justify-center'>
+          <p className="!text-white text-sm">&#169; Galactic Gateway Ltd.</p>
+        </div>
       </div>
     </footer>
   )
