@@ -45,7 +45,7 @@
     "question" : "What can I do with the virtual debit card?",
     "list" : false,
     "answer" : [
-      "GalaxyFi's virtual debit card can be used for online purchases, subscriptions, and international transactions. It’s also a convenient way for freelancers to receive earnings directly in Naira via a linked US bank account."
+      "GalaxyFi's virtual debit card can be used for online purchases, subscriptions, and international transactions with the option of choosing either Visa or Mastercard virtual cards, our cards do not decline."
     ]
   },
   {
@@ -70,10 +70,10 @@
     ]
   },
   {
-    "question" : "Does GalaxyFi offer virtual USD accounts?",
+    "question" : "Does GalaxyFi offer virtual USD/EUR accounts?",
     "list" : false,
     "answer" : [
-      "Yes, GalaxyFi provides the lowest price in the market for creating a virtual USD account, available for just $3, usable with Visa or Mastercard for international transactions."
+      "Yes, GalaxyFi provides the lowest price in the market for creating a virtual USD/EUR account."
     ]
   },
   {
