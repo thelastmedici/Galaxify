@@ -75,8 +75,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={`w-full flex items-center py-2 justify-center max-w-6xl mx-auto ${dmsans.className}`}>
-        <div className='flex items-center justify-center'>
-          <p className="!text-white text-sm">&#169; 2024 Galactic Gateway Ltd.</p>
+        <div className='flex items-center justify-left'>
+          <p className="!text-white text-sm">Copyright &#169; 2024 Galactic Gateway Ltd. All Right Reserved.</p>
         </div>
       </div>
     </footer>
