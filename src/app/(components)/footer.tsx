@@ -1,6 +1,6 @@
 import React from 'react'
 import { dmsans, sofia } from '../font'
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";import Link from 'next/link';
 import Image from 'next/image';
 ;
@@ -28,11 +28,14 @@ const Footer = () => {
             <Link href="">
               <FaLinkedinIn size={20} />
             </Link> */}
-            <Link href="https://www.instagram.com/usegalaxyfi" target='_blank'>
-              <FaInstagram size={20} />
+            <Link href="https://web.facebook.com/people/GalaxyFi/61568249968818/" target='_blank'>
+              <FaFacebook size={20} />
             </Link>
             <Link href="https://x.com/useGalaxyFi" target="_blank">
               <FaXTwitter size={20} />
+            </Link>
+            <Link href="https://www.instagram.com/usegalaxyfi" target='_blank'>
+              <FaInstagram size={20} />
             </Link>
             <Link href="https://linkedin.com/company/usegalaxyfi" target="_blank">
               <FaLinkedin size={20} />

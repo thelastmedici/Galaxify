@@ -1,6 +1,6 @@
 import React from 'react'
 import { dmsans, sofia } from '../font'
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiPhone } from "react-icons/ci";
 import { MdOutlineEmail, MdWhatsapp } from "react-icons/md";
@@ -53,6 +53,17 @@ const page = () => {
               <h2 className={`${sofia.className} font-bold text-lg`}>Instagram</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://www.instagram.com/usegalaxyfi" target='_blank'>
                 usegalaxyfi
+              </Link>
+            </div>
+          </div>
+          <div className='flex flex-row gap-3'>
+            <div className="py-2">
+              <FaFacebook size={24}/>
+            </div>
+            <div className='flex flex-col'>
+              <h2 className={`${sofia.className} font-bold text-lg`}>Facebook</h2>
+              <Link className="text-sm text-darkViolet font-semibold" href="https://web.facebook.com/people/GalaxyFi/61568249968818" target='_blank'>
+                GalaxyFi
               </Link>
             </div>
           </div>
