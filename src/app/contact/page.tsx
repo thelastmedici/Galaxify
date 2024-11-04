@@ -1,6 +1,6 @@
 import React from 'react'
 import { dmsans, sofia } from '../font'
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiPhone } from "react-icons/ci";
 import { MdOutlineEmail, MdWhatsapp } from "react-icons/md";
@@ -52,7 +52,7 @@ const page = () => {
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>Instagram</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://www.instagram.com/usegalaxyfi" target='_blank'>
-                @usegalaxyfi
+                usegalaxyfi
               </Link>
             </div>
           </div>
@@ -63,7 +63,18 @@ const page = () => {
             <div className='flex flex-col'>
               <h2 className={`${sofia.className} font-bold text-lg`}>X</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://x.com/useGalaxyFi" target='_blank'>
-                @useGalaxyFi
+                useGalaxyFi
+              </Link>
+            </div>
+          </div>
+          <div className='flex flex-row gap-3'>
+            <div className="py-2">
+              <FaLinkedin size={24}/>
+            </div>
+            <div className='flex flex-col'>
+              <h2 className={`${sofia.className} font-bold text-lg`}>LinkedIn</h2>
+              <Link className="text-sm text-darkViolet font-semibold" href="https://linkedin.com/company/usegalaxyfi" target='_blank'>
+                GalaxyFi
               </Link>
             </div>
           </div>
