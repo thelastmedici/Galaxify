@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { dmsans, sofia } from '@/app/font'
+import { dmsans, grotesk } from '@/app/font'
 
 const ImgGrid = () => {
   return (
@@ -33,7 +33,7 @@ const ImgGrid = () => {
         <div className='rounded-lg grid grid-cols-1 sm:grid-cols-2 gap-6'>
           <div className='rounded-lg overflow-hidden relative'>
             <div className='absolute top-0 left-0 w-full py-4 px-3 max-w-[270px] text-lavender flex flex-col gap-2'>
-              <h1 className={`text-lavender font-bold text-xl ${ sofia.className }`}>
+              <h1 className={`text-lavender font-bold text-xl ${ grotesk.className }`}>
                   Swift and Secure Payment
               </h1>
               <p className='text-base !text-white'>Your transactions are protected and safe with GalaxyFi</p>
@@ -45,7 +45,7 @@ const ImgGrid = () => {
           </div>
           <div className='rounded-lg overflow-hidden relative'>
             {/* <div className='absolute top-0 left-0 w-full py-4 px-3 max-w-[250px] text-lavender flex flex-col gap-2 text-lavender z-[100]'>
-              <h1 className={`text-lavender font-bold text-xl ${ sofia.className }`}> 
+              <h1 className={`text-lavender font-bold text-xl ${ grotesk.className }`}> 
                 Borderless Transactions
               </h1>
               <p className='text-base !text-white'>Experience the freedom of payments across the Globe</p>
@@ -55,7 +55,7 @@ const ImgGrid = () => {
         </div>
         <div className='rounded-lg overflow-hidden relative h-fit'>
           <div className='absolute bottom-0 left-0 w-full py-4 px-3 max-w-[300px] flex flex-col gap-2 !text-customBlack'>
-            <h1 className={`!text-lavender font-bold text-xl ${ sofia.className }`}>
+            <h1 className={`!text-lavender font-bold text-xl ${ grotesk.className }`}>
               Redefining Finance
             </h1>
             <p className='!text-lavender  text-base'>

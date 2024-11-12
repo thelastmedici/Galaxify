@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { dmsans, sofia } from '../font'
+import { dmsans, grotesk } from '../font'
 import InputBox from '../(components)/input'
 
 const Page = () => {
@@ -10,7 +10,7 @@ const Page = () => {
         <h1 className={`${ dmsans.className} !text-[40px] md:!text-[70px] font-bold text-darkViolet`}>
           Join our Waitlist
         </h1>
-        <p className={`${ sofia.className } text-lg text-center`}>
+        <p className={`${ grotesk.className } text-lg text-center`}>
           Our Solution aims to implement an evolving hassle free system bridging the gap in your day to day payment processes.
         </p>
       </section>

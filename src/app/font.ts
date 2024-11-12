@@ -1,5 +1,4 @@
-import { DM_Sans } from "next/font/google";
-import localFont from "next/font/local";
+import { DM_Sans, Familjen_Grotesk } from "next/font/google";
 
 export const dmsans = DM_Sans({
   subsets : ['latin', 'latin-ext'],
@@ -8,9 +7,9 @@ export const dmsans = DM_Sans({
   style: 'normal'
 })
 
-export const sofia = localFont({
-  src: "./fonts/SofiaProRegular.otf",
-  // variable: "--font-geist-sans",
-  weight: "400, 700",
-  display : 'swap',
-});
+export const grotesk = Familjen_Grotesk({
+  subsets: ["latin", "latin-ext", "vietnamese"],
+  weight : ["400", "500", "600", "700"],
+  display : "swap",
+  style : "normal"
+})

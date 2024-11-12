@@ -1,5 +1,5 @@
 import React from 'react'
-import { dmsans, sofia } from '../font'
+import { dmsans, grotesk } from '../font'
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiPhone } from "react-icons/ci";
@@ -13,7 +13,7 @@ const page = () => {
         <h1 className={`${ dmsans.className} text-[40px] md:!text-[70px] font-bold text-darkViolet`}>
           Contact us
         </h1>
-        <p className={`${ sofia.className } text-lg`}>
+        <p className={`${ grotesk.className } text-lg`}>
           We can&apos;t wait to connect with you
         </p>
       </section>
@@ -31,7 +31,7 @@ const page = () => {
               <CiPhone size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>Phone</h2>
+              <h2 className={`${grotesk.className} font-bold text-lg`}>Phone</h2>
               <Link className="text-xs" href="tel:02017003102">0201 700 3102</Link>
               {/* <Link className="text-xs" href="#">+234 999 999 999 </Link> */}
             </div>
@@ -41,7 +41,7 @@ const page = () => {
               <MdOutlineEmail size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>Email</h2>
+              <h2 className={`${grotesk.className} font-bold text-lg`}>Email</h2>
               <Link href="mailto:support@usegalaxyfi.com" className="text-sm">support@usegalaxyfi.com</Link>
             </div>
           </div>
@@ -50,7 +50,7 @@ const page = () => {
               <FaInstagram size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>Instagram</h2>
+              <h2 className={`${grotesk.className} font-bold text-lg`}>Instagram</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://www.instagram.com/usegalaxyfi" target='_blank'>
                 usegalaxyfi
               </Link>
@@ -61,7 +61,7 @@ const page = () => {
               <FaFacebook size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>Facebook</h2>
+              <h2 className={`${grotesk.className} font-bold text-lg`}>Facebook</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://web.facebook.com/people/GalaxyFi/61568249968818" target='_blank'>
                 GalaxyFi
               </Link>
@@ -72,7 +72,7 @@ const page = () => {
               <FaXTwitter size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>X</h2>
+              <h2 className={`${grotesk.className} font-bold text-lg`}>X</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://x.com/useGalaxyFi" target='_blank'>
                 useGalaxyFi
               </Link>
@@ -83,7 +83,7 @@ const page = () => {
               <FaLinkedin size={24}/>
             </div>
             <div className='flex flex-col'>
-              <h2 className={`${sofia.className} font-bold text-lg`}>LinkedIn</h2>
+              <h2 className={`${grotesk.className} font-bold text-lg`}>LinkedIn</h2>
               <Link className="text-sm text-darkViolet font-semibold" href="https://linkedin.com/company/usegalaxyfi" target='_blank'>
                 GalaxyFi
               </Link>
