@@ -126,7 +126,7 @@
 // import 'swiper/css';
 // import 'swiper/css/effect-cards';
 // import { EffectCards, Autoplay } from 'swiper/modules';
-// import { dmsans, grotesk } from '../font';
+// import { dmsans, inter } from '../font';
 // import Image from 'next/image';
 
 // export default function Swipe() {
@@ -141,7 +141,7 @@
 //   return (
 //     <div className="relative grid grid-cols-1 min-[991px]:grid-cols-2 p-6 sm:py-20 sm:px-12 gap-10 overflow-hidden">
 //       <div className="">
-//         <h1 className={`${grotesk.className} text-left text-4xl`}>
+//         <h1 className={`${inter.className} text-left text-4xl`}>
 //           Our Product Offers
 //         </h1>
 //         <div className={`flex flex-col gap-6 mt-5 ${ dmsans.className }`}>
@@ -246,7 +246,7 @@ import { CiCreditCard2 } from "react-icons/ci";
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards, Autoplay } from 'swiper/modules';
-import { dmsans, grotesk } from '../font';
+import { dmsans, inter } from '../font';
 // import Image from 'next/image';
 
 const slideContent = [
@@ -292,7 +292,7 @@ export default function Swipe() {
   return (
     <div className="relative grid grid-cols-1 min-[991px]:grid-cols-2 p-6 sm:py-20 sm:px-12 gap-10 overflow-hidden justify-items-center justify-center mx-auto max-w-7xl">
       <div className="">
-        <h1 className={`${grotesk.className} text-left text-4xl`}>
+        <h1 className={`${inter.className} text-left text-4xl`}>
           Our Product Offers
         </h1>
         <div className={`flex flex-col gap-6 mt-5 ${dmsans.className}`}>

@@ -1,5 +1,5 @@
 // import React from 'react'
-// import { dmsans, grotesk} from '../font'
+// import { dmsans, inter} from '../font'
 // import Link from 'next/link'
 // // import InputBox from './input'
 
@@ -10,7 +10,7 @@
 //         <div className="">
 //           <div className='flex flex-col gap-6 items-center'>
 //             <h1 
-//             className={`${ grotesk.className } text-center min-[400px]:text-[80px] text-[60px] sm:text-[80px] md:text-[144px] tracking-wider leading-tight font-bold text-gradient`}>
+//             className={`${ inter.className } text-center min-[400px]:text-[80px] text-[60px] sm:text-[80px] md:text-[144px] tracking-wider leading-tight font-bold text-gradient`}>
 //               Galaxy
 //               <span 
 //               className='capitalize'>
@@ -22,7 +22,7 @@
 //             >
 //               Your all in one app
 //             </p>
-//             {/* <h1 className={`${grotesk.className} text-center text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
+//             {/* <h1 className={`${inter.className} text-center text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
 //               Join the Waitlist
 //             </h1> */}
 //             <div className="text-center w-full !mt-4">
@@ -59,7 +59,7 @@
 // export default Hero
 
 import React from 'react';
-import { dmsans, grotesk } from '../font';
+import { dmsans, inter } from '../font';
 import Link from 'next/link';
 // import InputBox from './input';
 
@@ -69,7 +69,7 @@ const Hero = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6">
         <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-4">
           <h1 
-            className={`${grotesk.className} text-[60px] sm:text-[64px] md:text-[80px] lg:text-[96px] xl:text-[120px] leading-tight font-bold text-gradient tracking-tight`}>
+            className={`${inter.className} text-[60px] sm:text-[64px] md:text-[80px] lg:text-[96px] xl:text-[120px] leading-tight font-bold text-gradient tracking-tight`}>
             Galaxy<span className="capitalize">Fi</span>
           </h1>
           <p 
@@ -77,7 +77,7 @@ const Hero = () => {
           >
             Your all-in-one app
           </p>
-          {/* <h1 className={`${grotesk.className} text-2xl sm:text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
+          {/* <h1 className={`${inter.className} text-2xl sm:text-3xl tracking-wider mt-4 !text-darkViolet will-change-auto`}>
               Join the Waitlist
           </h1> */}
           <div className="w-full md:w-auto">
