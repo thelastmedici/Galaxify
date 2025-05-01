@@ -3,7 +3,7 @@ import { dmsans, inter } from '../font'
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";import Link from 'next/link';
 import Image from 'next/image';
-;
+import moment from "moment"
 
 
 const Footer = () => {
@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
       <div className={`w-full flex items-center py-2 justify-left max-w-6xl mx-auto ${dmsans.className}`}>
         <div className='flex items-center justify-left'>
-          <p className="!text-white text-sm">Copyright &#169; 2024 Galactic Gateway Ltd. All Right Reserved.</p>
+          <p className="!text-white text-sm">Copyright &#169; { moment().format("YYYY") } Galactic Gateway Ltd. All Right Reserved.</p>
         </div>
       </div>
     </footer>
